@@ -576,7 +576,7 @@ def plot_path_abundance_comparison(path_probabilities1, path_probabilities2, nam
         fig.write_html(filename, include_plotlyjs='cdn', full_html=True)
     return fig
 
-def path_pdf_clustered_graph(dataset,save_paths_with_clustered_nodes = False, filename = "clustered_paths"):
+def path_pdf_clustered_graph(dataset,save_paths_with_clustered_nodes = False, filename = "./data/clustered_paths"):
     """Calculate the path probability distribution from the dataset, by using the weights of the edges in the graph.
         However the paths are constrained to the paths that are present in the dataset.
         at certin point we create the clustered graph from the dataset, and then we calculate the path probabilities based on the edges of the clustered graph.
