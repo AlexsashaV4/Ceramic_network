@@ -12,3 +12,7 @@ To run the code clone the repository and create a conda enviroment with the depe
 ```bash 
 conda env create --name env_name -f environment.yml
 ```
+
+In the Presentation Notebook there is a self contained narrative of the project. 
+
+In functions.py there are all the necessary developed tools to make the analysis
