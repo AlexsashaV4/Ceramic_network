@@ -1,7 +1,9 @@
-# Project Title
+# Ceramic Network 
 
 ## Description
-Brief description of the project and what it does.
+Kroon, E.J. in his PhD thesis tried to reconstruct the interaction between two cultures: Funnel Beaker West (4000-2800 BCE)  and Corded Ware (3000-2350 BCE). In his thesis he uses a probabilistic approach and to determine the similarity he uses the wasserstein distance between the empirical pdfs of the edges, because from the dataset we can determine the probability to do a step after anoter in a certain culture: 
+$p(x_{t+1}| x_{t})$.  
+Here we try new approaches. 
 
 ## Installation
 
