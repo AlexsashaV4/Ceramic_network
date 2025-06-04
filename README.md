@@ -12,7 +12,7 @@ To set up the environment required to run this project, use [Conda](https://docs
 To run the code clone the repository and create a conda enviroment with the dependencies. 
 
 ```bash 
-conda env create --name env_name -f environment.yml
+conda env create --name env_name -f environment_full.yml
 ```
 
 In the Presentation Notebook there is a self contained narrative of the project. 
