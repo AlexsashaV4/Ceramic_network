@@ -10,9 +10,14 @@ from IPython.display import HTML
 import gravis as gv
 
 def graph_from_data(data):
-    """Return a directed graph from the dataset where each row is a work-chain of the pot.
+    """Return a directed graph from the dataset where each row is a work-chain of the pot. 
+
+    Each step in the work chain is a node in the graph, and each transition from one step to the next is an edge in the graph.
+
+    **The edge weights are the number of times the transition appears in the dataset**, and the node attributes are the number of times the step appears in the dataset.
+
     Args:
-        data: pandas dataset, where each row represents a work-chain and each column represents a step in the work-chain.
+        data: pandas dataset, where each row represents a work-chain and each column represents a step in the work-chain. (Thework-chains can have a different length)
     Returns:
         G: a directed graph where each node is a step in the work-chain and each edge is a transition from one step to the next.
     """
@@ -26,6 +31,12 @@ def graph_from_data(data):
             # add the counting of the node in the dataset
             G.nodes[path[j]]['count'] = G.nodes[path[j]].get('count', 0) + 1
     
+    # add to node one the attribute 'prob' that is the probability of starting from this node
+    # calculate the 'prob' of starting nodes 
+    start_nodes = [node for node in G.nodes() if G.in_degree(node) == 0]
+    total_start_count = sum(G.nodes[node].get('count', 0) for node in start_nodes)
+    for node in start_nodes:
+        G.nodes[node]['prob'] = G.nodes[node].get('count', 0) / total_start_count if total_start_count > 0 else 0  # Avoid division by zero
     # Normalize the weights of the edges divinding by the outgoing strenght of the source node
     total_weights = {node: G.out_degree(node, weight='weight') for node in G.nodes()}
     for u, v in G.edges():
@@ -40,14 +51,7 @@ def graph_from_data(data):
 
 def create_flow_layout(G, width=1000, height=800, margin=50):
     """
-    Create a layout with clear left-to-right flow visualization for directed networks.
-    
-    Args:
-        G: NetworkX DiGraph object
-        width: Width of the layout space
-        height: Height of the layout space
-        margin: Margin from the edges of the layout
-        
+    For better visualisation of the graph. If the graph is not a Acycle, it will use a spring layout.
     Returns:
         pos: Dictionary mapping nodes to (x,y) positions
     """
@@ -159,9 +163,9 @@ def create_flow_layout(G, width=1000, height=800, margin=50):
     
     return pos
 
-def cluster_nodes(data,  group_size = 3, num_data = 0, step = 1, coloring = False, position = None, save_paths_with_clustered_nodes = False, filename = "clustered_paths", type_edge_weight = 'count'):
-    """Create the ceramic graph from the dataset. 
-    Each node is a triplet (group_size) of steps in the work-chain, and each edge is a hypothetical  transition from one triplet to another.
+def cluster_nodes(data,  group_size = 3, num_data = 0, step = 1, coloring = False, position = None, save_paths_with_clustered_nodes = False, filename = "clustered_paths", type_edge_weight = 'probability'):
+    """Ceramic graph from the dataset. (Maybe the most controversial function ahahhaa) #Generic group size still to be implemented!!
+    The idea is to group the work steps into triplets (or any other group size),and each edge is a hypothetical  transition from one triplet to another.
 
     For example, consider the following work-chain:  Wet clay ; Modelling ; Pressure ; Wet smoothing ; Leather-hard ; Dry ; Open firing. 
     If group_size = 1, we will have the following nodes: Wet clay --> Modelling --> Pressure --> Wet smoothing --> Leather-hard --> Dry --> Open firing
@@ -171,23 +175,32 @@ def cluster_nodes(data,  group_size = 3, num_data = 0, step = 1, coloring = Fals
     (Wet clay, Modelling, Pressure) --> (Modelling, Pressure, Wet smoothing) because the second node starts with the second step of the first node.
 
     Furthermore, when we cluster we save the sequence of triplets in a dataframe, where each row is a path and each column is a node triplet.
-    Args:
-        data: pandas dataset
-        group_size = 3 to define the triplet but can be changed to any number of steps in the work-chain.
-        num_data: number of rows to consider in the dataset, if not specified all rows are considered.
-        step: step size to consider when extracting triplets, default is 1, meaning that the triplets are extracted from consecutive steps. 
+
+    Last but not least, we update the edge weights (probability) P(A,B,C) = P(C|B,A) * P(B|A) * P(A), where A, B, C are the triplets. For the first element we assume P(A) = 1. 
+
+    Then when we group and calculate the path probabilities, we can use the edge weights to calculate the probability of a path as the product of the edge weights along the path and the initial P(A).
+
+    On the other hand a more heuristic approach (I assume that they aare equivalent) is to use the edge weights as the number of times the transition appears in the dataset, and then normalize the edge weights by the outgoing degree of the source node.
+
+    So one comes from the single subgraphs weights, the other comes directly from the dataset
+
+    Maybe need a better explanation of the edge weights and how they are calculated.
+    Returns:
+        G: a directed graph where each node is a triplet of steps in the work-chain and each edge is a transition from one triplet to another.
     """
+
     if num_data != 0:
-        tot_data= num_data
+        tot_data=num_data
     else:
         tot_data = len(data)
     G = nx.DiGraph()
-    if type_edge_weight not in ['count', 'probability']:
-        raise ValueError("type_edge_weight must be either 'count' or 'probability'")
+    if type_edge_weight not in ['from_data', 'probability']:
+        raise ValueError("type_edge_weight must be either 'from_data' or 'probability'")
     if type_edge_weight == 'probability':
         G_tmp = graph_from_data(data)
     if save_paths_with_clustered_nodes:
         cluster_path = []
+    # Group the nodes in triplets (or any other group size) and create the edges between them
     for i in range(tot_data):
         path = data.iloc[i].dropna().tolist()
         tmp_clust_path = []
@@ -199,10 +212,18 @@ def cluster_nodes(data,  group_size = 3, num_data = 0, step = 1, coloring = Fals
                     prev_triplet = tuple(path[j - step:j - step + group_size])
                     if len(prev_triplet) == group_size:
                         G.add_edge(prev_triplet, triplet)
-                        if type_edge_weight == 'count': 
-                            G[prev_triplet][triplet]['weight'] = G[prev_triplet][triplet].get('weight', 0) + 1
+                        if type_edge_weight == 'from_data': 
+                            G[prev_triplet][triplet]['weight'] = G[prev_triplet][triplet].get('weight', 0) + 1 # count the number of times the edge appears in the dataset
                         elif type_edge_weight == 'probability':
-                            G[prev_triplet][triplet]['weight'] = G_tmp[prev_triplet[-1]][triplet[-1]]['weight']
+                            G[prev_triplet][triplet]['weight'] = G_tmp[prev_triplet[-1]][triplet[-1]]['weight'] # construct the edge weight from the previous triplet to the current triplet based on the "less coarse graph" o il graph di supporto come quello delle tecniche
+                else:
+                    # If it's the first triplet, we can assume it has no incoming edges, but now we will have a probabability to start from it P(triplet) = P(C|B,A) * P(B|A) * P(A)
+                    if type_edge_weight == 'probability': # add a new attribute to the node with the probability of starting from it
+                        G.nodes[triplet]['prob'] = np.prod([G_tmp[triplet[i]][triplet[i + 1]]['weight'] for i in range(group_size - 1)]) * 1 # P(A) = 1 for the first triplet we always start from "wet clay"
+                    # generalise for any group size 
+                    elif type_edge_weight == 'from_data':
+                        G.nodes[triplet]['count'] = G.nodes[triplet].get('count', 0) + 1 
+        
             if save_paths_with_clustered_nodes:
                 tmp_clust_path.append(triplet)
         if save_paths_with_clustered_nodes:
@@ -211,21 +232,12 @@ def cluster_nodes(data,  group_size = 3, num_data = 0, step = 1, coloring = Fals
         df = pd.DataFrame(cluster_path)
         # Save the dataframe to a csv file
         df.to_csv(f'{filename}.csv', index=False, header=False, sep=';')
-                # Save the sequence of triplets in a dataframe each row is a pot and each collumn is the node triplet
-
-    
-    # Normalize the weights of the edges by the outgoing strength of the source node
+        # Save the sequence of triplets in a dataframe each row is a pot and each collumn is the node triplet
     total_weights = {node: G.out_degree(node, weight='weight') for node in G.nodes()}
     for u, v in G.edges():
-        G[u][v]['weight'] /= total_weights[u] if total_weights[u] > 0 else 1  # Avoid division by zero
-    # add the labels to the edges
+        G[u][v]['weight'] /= total_weights[u] if total_weights[u] > 0 else 1  
     for u, v in G.edges():
         G[u][v]['label'] = f"{G[u][v]['weight']:.2f}"
-
-    # The node coloring is as follows: 
-    # Find start nodes (nodes with no incoming edges) GREEN and end nodes (nodes with no outgoing edges) RED and color them differently.
-    # Then we color the nodes based on their connectivity, using a colormap. In particular enphasizing the nodes with lower connectivity coloring them in BLUE. 
-
     if coloring:
         # Find start nodes (no incoming edges)
         start_nodes = [node for node in G.nodes() if G.in_degree(node) == 0]
@@ -242,6 +254,10 @@ def cluster_nodes(data,  group_size = 3, num_data = 0, step = 1, coloring = Fals
         # Create a colormap based on the degree of the nodes not using ploty 
         # Use viridis colormap from matplotlib
         degrees = np.array([G.degree(node) for node in G.nodes()])
+        nx.set_node_attributes(G, {node: G.nodes[node].get('label', node) for node in G.nodes()}, 'label')
+        # add the prob attribute to the nodes if it exists
+        if 'prob' in G.nodes[next(iter(G.nodes()))]:
+            nx.set_node_attributes(G, {node: G.nodes[node].get('prob', 1.0) for node in G.nodes()}, 'prob')
         # add the degrees to node attributes and labels
         nx.set_node_attributes(G, {node: G.degree(node) for node in G.nodes()}, 'deg')
         # in and out degrees
@@ -440,7 +456,7 @@ def find_most_probable_path(G, start_node, end_node):
 
 
 def path_pdf(data):
-    """Calculate the path probability distribution from the dataset, by simple counting the presence.
+    """Calculate the path probability distribution (from the dataset)!, by simple counting the presence.
     Args:
         data: pandas dataset, where each row represents a work-chain and each column represents a step in the work-chain.
     Returns:
@@ -461,7 +477,7 @@ def path_pdf(data):
     path_probabilities = {path: count / total_paths for path, count in path_counts.items()}
     
     return path_probabilities
-def path_pdf_weights(data): 
+def path_pdf_weights(data, type_edge_weight = 'probability'): 
     """Calculate the path probability distribution from the dataset, by using the weights of the edges in the graph.
 
     Args:
@@ -479,6 +495,12 @@ def path_pdf_weights(data):
             for j in range(len(path) - 1):
                 u = path[j]
                 v = path[j + 1]
+                # add the probability of being in the first node 
+                if j == 0 and type_edge_weight == 'from_data':
+                    prob *= G.nodes[u].get('count', 1) / sum(G.nodes[n].get('count', 1) for n in G.nodes())
+                elif j == 0 and type_edge_weight == 'probability':
+                    prob *= G.nodes[u].get('prob', 1)          
+                # multiply the probability of the edge
                 if G.has_edge(u, v):
                     prob *= G[u][v]['weight']
                 else:
@@ -493,7 +515,7 @@ def path_pdf_weights(data):
     return path_probabilities
 
 def plot_path_pdf(path_probabilities,height = 400, width = 800 , show = False, save = False, filename = "path_probabilities.html"):
-    """Plot the path probability distribution as a bar chart.
+    """This function plot the path probability distribution as a bar chart and orders the paths from the most common to the least common.
     
     Args:
         path_probabilities: A dictionary where keys are paths (tuples) and values are their probabilities.
@@ -530,8 +552,7 @@ def plot_path_pdf(path_probabilities,height = 400, width = 800 , show = False, s
 
 
 def plot_path_abundance_comparison(path_probabilities1, path_probabilities2, name1 = "Dataset 1", name2 = "Dataset 2", show = False, save= False, filename = "path_abundance_comparison.html"):
-    """Plot the path abundance comparison between two datasets as a bar chart. As much as possible look for common paths 
-
+    """ This function plots the path abundance comparison between two datasets as a bar chart.
     """
     # Extract paths and probabilities from the first dataset
     paths1 = list(path_probabilities1.keys())
