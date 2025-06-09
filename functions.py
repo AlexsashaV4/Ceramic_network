@@ -14,7 +14,7 @@ def graph_from_data(data):
 
     Each step in the work chain is a node in the graph, and each transition from one step to the next is an edge in the graph.
 
-    **The edge weights are the number of times the transition appears in the dataset**, and the node attributes are the number of times the step appears in the dataset.
+    **The edge weights are the number of times the transition appears in the dataset**, and the node 'count' attribute is the number of times the step appears in the dataset.
 
     Args:
         data: pandas dataset, where each row represents a work-chain and each column represents a step in the work-chain. (Thework-chains can have a different length)
@@ -26,24 +26,17 @@ def graph_from_data(data):
         path = data.iloc[i].dropna().tolist()
         for j in range(len(path) - 1):
             G.add_edge(path[j], path[j + 1])
-            # add the weight of the edge as the number of times the edge appears in the data
             G[path[j]][path[j + 1]]['weight'] = G[path[j]][path[j + 1]].get('weight', 0) + 1
-            # add the counting of the node in the dataset
             G.nodes[path[j]]['count'] = G.nodes[path[j]].get('count', 0) + 1
-    
-    # add to node one the attribute 'prob' that is the probability of starting from this node
-    # calculate the 'prob' of starting nodes 
+
     start_nodes = [node for node in G.nodes() if G.in_degree(node) == 0]
     total_start_count = sum(G.nodes[node].get('count', 0) for node in start_nodes)
     for node in start_nodes:
-        G.nodes[node]['prob'] = G.nodes[node].get('count', 0) / total_start_count if total_start_count > 0 else 0  # Avoid division by zero
-    # Normalize the weights of the edges divinding by the outgoing strenght of the source node
+        G.nodes[node]['prob'] = G.nodes[node].get('count', 0) / total_start_count if total_start_count > 0 else 0 
     total_weights = {node: G.out_degree(node, weight='weight') for node in G.nodes()}
     for u, v in G.edges():
-        G[u][v]['weight'] /= total_weights[u] if total_weights[u] > 0 else 1  # Avoid division by zero
-    # add the degrees to the nodes
+        G[u][v]['weight'] /= total_weights[u] if total_weights[u] > 0 else 1 
     nx.set_node_attributes(G, {node: G.degree(node) for node in G.nodes()}, 'deg')
-        # in and out degrees
     nx.set_node_attributes(G, {node: G.in_degree(node) for node in G.nodes()}, 'in_deg')
     nx.set_node_attributes(G, {node: G.out_degree(node) for node in G.nodes()}, 'out_deg')
 
@@ -51,82 +44,79 @@ def graph_from_data(data):
 
 def create_flow_layout(G, width=1000, height=800, margin=50):
     """
-    For better visualisation of the graph. If the graph is not a Acycle, it will use a spring layout.
+    For better visualisation of the graph, where on the left we have the initial nodes and on the right the final ones. If the graph has cycles, it will use a spring layout.
+    just found the function "topological sort" on the internet, it is not mine, but I think it is a good way to create a flow layout for a directed graph.
     Returns:
         pos: Dictionary mapping nodes to (x,y) positions
     """
-    # Step 1: Identify source and sink nodes
+
+
     source_nodes = [node for node in G.nodes() if G.in_degree(node) == 0]
-    sink_nodes = [node for node in G.nodes() if G.out_degree(node) == 0]
+    final_nodes = [node for node in G.nodes() if G.out_degree(node) == 0]
     
-    # Step 2: Calculate the "rank" (layer) of each node using longest path from any source
-    # Initialize all nodes to -1 (unvisited)
+    # Like dijkstra algorithm 
     ranks = {node: -1 for node in G.nodes()}
     
-    # Start with source nodes at rank 0
     for source in source_nodes:
         ranks[source] = 0
     
-    # Use topological sort to ensure we process nodes in the right order
     # This will only work if the graph is a DAG (Directed Acyclic Graph)
     if nx.is_directed_acyclic_graph(G):
         for node in nx.topological_sort(G):
             # Node's rank is at least its current rank
             current_rank = ranks[node]
             
-            # For each successor, potentially update its rank
+            # For each successor, increse its rank by 1
             for successor in G.successors(node):
                 ranks[successor] = max(ranks[successor], current_rank + 1)
+        # This is to give a "Directionality to the graph"
     else:
-        # If the graph is not a DAG, we need to handle cycles or unreachable nodes
+        # If the graph is not a DAG, we need to handle cycles or unreachable nodes (if it has cycles there is some confusion in how we assign the ranks, haven't found a good solution yet)
         # use simple layoout es spring layout
         pos = nx.spring_layout(G, scale=600, seed=42)  # Use spring layout for better visualization
-        # Assign ranks based on the position in the layout
         return pos
         
-    # Step 3: Handle nodes that weren't reached (cycles or unreachable from sources)
+    # Check and assign some position to nodes that weren't reached (cycles or unreachable from sources) (impossible to reach) so in theory never used
     max_rank = max(ranks.values()) if ranks.values() else 0
     for node, rank in ranks.items():
         if rank == -1:  # Node wasn't reached
-            # Try to place it based on predecessors
             pred_ranks = [ranks[pred] for pred in G.predecessors(node) if ranks[pred] >= 0]
             if pred_ranks:
                 ranks[node] = max(pred_ranks) + 1
             else:
-                # No predecessor with valid rank, place in the middle
                 ranks[node] = max_rank // 2
     
     # Update max rank
     max_rank = max(ranks.values()) if ranks.values() else 0
     
-    # Step 4: Count nodes in each rank for vertical spacing
+    # So ranks is used as a collum placing the nodes in the graph, example rank = 1 --> place after on the right of the source nodes, rank = 2 --> place after the rank 1 nodes, etc.
     rank_counts = {}
     for node, rank in ranks.items():
         if rank not in rank_counts:
             rank_counts[rank] = 0
         rank_counts[rank] += 1
     
-    # Step 5: Calculate positions
+    # Assign positions based on ranks
     pos = {}
     for node, rank in ranks.items():
-        # X-coordinate: distribute ranks evenly across the width
+        # X-coordinate: distribute ranks evenly
         x = margin + (width - 2 * margin) * rank / max(max_rank, 1)
         
-        # Y-coordinate: distribute nodes within their rank
+        # Y-coordinate: distribute evenly nodes within their rank
         # Find position of this node within its rank
         nodes_in_rank = [n for n, r in ranks.items() if r == rank]
         node_index = nodes_in_rank.index(node)
         total_in_rank = len(nodes_in_rank)
         
         if total_in_rank == 1:
-            y = height / 2  # Center single nodes
+            y = height / 2 
         else:
             y = margin + (height - 2 * margin) * node_index / (total_in_rank - 1)
         
         pos[node] = (x, y)
     
-    # Step 6: Optimize positions to reduce edge crossings using the barycenter method
-    for _ in range(3):  # A few iterations are usually enough
+    # optimize positions to reduce edge crossings using the barycenter method
+    for _ in range(3):
         for r in range(1, max_rank + 1):  # Start from rank 1 (not sources)
             nodes_at_rank = [node for node, rank in ranks.items() if rank == r]
             
@@ -150,20 +140,20 @@ def create_flow_layout(G, width=1000, height=800, margin=50):
                         y = margin + (height - 2 * margin) * i / (len(sorted_nodes) - 1)
                     pos[node] = (pos[node][0], y)
     
-    # Step 7: Special handling for source and sink nodes if needed
-    # Place source nodes on the leftmost edge
+    # Place source nodes on the leftmost 
     leftmost_x = margin
     for node in source_nodes:
         pos[node] = (leftmost_x - 150, pos[node][1])
     
-    # Place sink nodes on the rightmost edge
+    # Place sink nodes on the rightmost 
     rightmost_x = width - margin
-    for node in sink_nodes:
+    for node in final_nodes:
         pos[node] = (rightmost_x + 150 , pos[node][1])
     
     return pos
 
 def cluster_nodes(data,  group_size = 3, num_data = 0, step = 1, coloring = False, position = None, save_paths_with_clustered_nodes = False, filename = "clustered_paths", type_edge_weight = 'probability'):
+    #One of the most important function (I think is definetly correct), for triplets works well some adaptation need for other group sizes.
     """Ceramic graph from the dataset. (Maybe the most controversial function ahahhaa) #Generic group size still to be implemented!!
     The idea is to group the work steps into triplets (or any other group size),and each edge is a hypothetical  transition from one triplet to another.
 
@@ -200,7 +190,7 @@ def cluster_nodes(data,  group_size = 3, num_data = 0, step = 1, coloring = Fals
         G_tmp = graph_from_data(data)
     if save_paths_with_clustered_nodes:
         cluster_path = []
-    # Group the nodes in triplets (or any other group size) and create the edges between them
+    # next iterate over the dataset and create the triplets
     for i in range(tot_data):
         path = data.iloc[i].dropna().tolist()
         tmp_clust_path = []
@@ -213,9 +203,10 @@ def cluster_nodes(data,  group_size = 3, num_data = 0, step = 1, coloring = Fals
                     if len(prev_triplet) == group_size:
                         G.add_edge(prev_triplet, triplet)
                         if type_edge_weight == 'from_data': 
-                            G[prev_triplet][triplet]['weight'] = G[prev_triplet][triplet].get('weight', 0) + 1 # count the number of times the edge appears in the dataset
+                            G[prev_triplet][triplet]['weight'] = G[prev_triplet][triplet].get('weight', 0) + 1 
                         elif type_edge_weight == 'probability':
-                            G[prev_triplet][triplet]['weight'] = G_tmp[prev_triplet[-1]][triplet[-1]]['weight'] # construct the edge weight from the previous triplet to the current triplet based on the "less coarse graph" o il graph di supporto come quello delle tecniche
+                            G[prev_triplet][triplet]['weight'] = G_tmp[prev_triplet[-1]][triplet[-1]]['weight'] # construct the edge weight from the previous triplet to the current triplet based on the "less coarse graph" o il graph di supporto come quello delle sole tecniche
+                            # Entrambi gli approci dovrebbero essere equivalenti
                 else:
                     # If it's the first triplet, we can assume it has no incoming edges, but now we will have a probabability to start from it P(triplet) = P(C|B,A) * P(B|A) * P(A)
                     if type_edge_weight == 'probability': # add a new attribute to the node with the probability of starting from it
@@ -223,21 +214,19 @@ def cluster_nodes(data,  group_size = 3, num_data = 0, step = 1, coloring = Fals
                     # generalise for any group size 
                     elif type_edge_weight == 'from_data':
                         G.nodes[triplet]['count'] = G.nodes[triplet].get('count', 0) + 1 
-        
             if save_paths_with_clustered_nodes:
                 tmp_clust_path.append(triplet)
         if save_paths_with_clustered_nodes:
             cluster_path.append(tmp_clust_path)
     if save_paths_with_clustered_nodes:
         df = pd.DataFrame(cluster_path)
-        # Save the dataframe to a csv file
         df.to_csv(f'{filename}.csv', index=False, header=False, sep=';')
-        # Save the sequence of triplets in a dataframe each row is a pot and each collumn is the node triplet
     total_weights = {node: G.out_degree(node, weight='weight') for node in G.nodes()}
     for u, v in G.edges():
         G[u][v]['weight'] /= total_weights[u] if total_weights[u] > 0 else 1  
     for u, v in G.edges():
         G[u][v]['label'] = f"{G[u][v]['weight']:.2f}"
+
     if coloring:
         # Find start nodes (no incoming edges)
         start_nodes = [node for node in G.nodes() if G.in_degree(node) == 0]
@@ -251,28 +240,33 @@ def cluster_nodes(data,  group_size = 3, num_data = 0, step = 1, coloring = Fals
             if node in end_nodes:
                 color_map[node] = 'red'
 
-        # Create a colormap based on the degree of the nodes not using ploty 
-        # Use viridis colormap from matplotlib
         degrees = np.array([G.degree(node) for node in G.nodes()])
         nx.set_node_attributes(G, {node: G.nodes[node].get('label', node) for node in G.nodes()}, 'label')
-        # add the prob attribute to the nodes if it exists
         if 'prob' in G.nodes[next(iter(G.nodes()))]:
             nx.set_node_attributes(G, {node: G.nodes[node].get('prob', 1.0) for node in G.nodes()}, 'prob')
-        # add the degrees to node attributes and labels
+
         nx.set_node_attributes(G, {node: G.degree(node) for node in G.nodes()}, 'deg')
-        # in and out degrees
         nx.set_node_attributes(G, {node: G.in_degree(node) for node in G.nodes()}, 'in_deg')
         nx.set_node_attributes(G, {node: G.out_degree(node) for node in G.nodes()}, 'out_deg')
+
         norm = plt.Normalize(degrees.min(), degrees.max())
         cmap = plt.get_cmap(coloring)
         for node in G.nodes():
             if node not in color_map:
                 color_value = cmap(norm(G.degree(node)))
-                # Convert RGBA but not using plotly
                 color_map[node] = f'rgba({int(color_value[0] * 255)}, {int(color_value[1] * 255)}, {int(color_value[2] * 255)}, 1)'
-        # Assign colors to nodes
-    # Set the color attribute for each node
         nx.set_node_attributes(G, color_map, 'color')
+        if position is not None:
+            G = add_positions(G, position=position)
+        return G
+    else:
+        # If no coloring is needed, just return the graph
+        nx.set_node_attributes(G, {node: G.nodes[node].get('label', node) for node in G.nodes()}, 'label')
+        if 'prob' in G.nodes[next(iter(G.nodes()))]:
+            nx.set_node_attributes(G, {node: G.nodes[node].get('prob', 1.0) for node in G.nodes()}, 'prob')
+        nx.set_node_attributes(G, {node: G.degree(node) for node in G.nodes()}, 'deg')
+        nx.set_node_attributes(G, {node: G.in_degree(node) for node in G.nodes()}, 'in_deg')
+        nx.set_node_attributes(G, {node: G.out_degree(node) for node in G.nodes()}, 'out_deg')
         if position is not None:
             G = add_positions(G, position=position)
         return G
@@ -298,7 +292,7 @@ def add_positions(G, width=1000, height=800, margin=50 , position=None):
 
     return G
 
-def contract_low_degree_nodes(G, position=None, remove_nodes=False):
+def contract_low_degree_nodes(G, position=None, remove_chain=False):
     """Contract low-degree nodes in a directed graph.
     This function identifies chains of low-degree nodes (in+out degree ≤ 2) and contracts them into a single node.
 
@@ -320,11 +314,9 @@ def contract_low_degree_nodes(G, position=None, remove_nodes=False):
         if node in visited:
             continue
             
-        # Start a new chain
         chain = [node]
         visited.add(node)
         
-        # Expand forward if there's a single successor with low degree
         current = node
         while True:
             successors = list(G.successors(current))
@@ -339,7 +331,6 @@ def contract_low_degree_nodes(G, position=None, remove_nodes=False):
             visited.add(next_node)
             current = next_node
             
-        # Expand backward if there's a single predecessor with low degree
         current = node
         while True:
             predecessors = list(G.predecessors(current))
@@ -353,21 +344,12 @@ def contract_low_degree_nodes(G, position=None, remove_nodes=False):
             chain.insert(0, prev_node)
             visited.add(prev_node)
             current = prev_node
-        
-        # If we found a chain with at least 1 nodes, save it
         if len(chain) >= 1:
             components.append(chain)
-    #print(f"Found {len(components)} chains of low-degree nodes.")
-    # print the chains found
-    # for i, chain in enumerate(components):
-    #     print(f"Chain {i+1}: {chain}")
-    # Now we can contract the chains into single nodes
     for chain in components:
         first_node = chain[0]
         last_node = chain[-1]
-        # Create a new triplet that combines information from both end nodes
         if len(first_node) == 3 and len(last_node) == 3:
-            # Combine the first part that combine the whole chain 
             new_node_id = f"{first_node[0]}-"
             for ch in range(1, len(chain), 1):
                 new_node_id += f"{chain[ch][0]}-"
@@ -380,17 +362,18 @@ def contract_low_degree_nodes(G, position=None, remove_nodes=False):
             
         # Mark this as a contracted node
         contracted_nodes.add(new_node_id)
-        # Add the new node to the graph
-        if remove_nodes == False:
+
+        # Add the new node contracted node to the graph and remove the single nodes that were contracted, maintain the weights of the edges, because if we contracted a chain of node all the internal edges were 1
+        if remove_chain == False:
             G.add_node(new_node_id, color='black', deg=1, in_deg=1, out_deg=1, label=new_node_id)
-            # Find all incoming edges to the chain (except within-chain edges)
+            # Find all incoming edges to the chain
             in_edges = []
             for node in chain:
                 for pred in G.predecessors(node):
                     if pred not in chain:
                         in_edges.append((pred, new_node_id, G[pred][node].get('weight', 1)))
             
-            # Find all outgoing edges from the chain (except within-chain edges)
+            # Find all outgoing edges from the chain 
             out_edges = []
             for node in chain:
                 for succ in G.successors(node):
@@ -406,12 +389,12 @@ def contract_low_degree_nodes(G, position=None, remove_nodes=False):
             # Remove the original nodes in the chain
             G.remove_nodes_from(chain)
         else:
-            # remove the original nodes and connect directly the predecessors and successors of the chain with an edge 
+            # remove chain
             for node in chain:
                 predecessors = list(G.predecessors(node))
                 successors = list(G.successors(node))
                 
-                # Connect predecessors to the new node
+                # Connect predecessors to the successor of the chain
                 for pred in predecessors:
                     for succ in successors:
                         G.add_edge(pred, succ, weight=G[pred][node].get('weight', 1))
@@ -432,9 +415,18 @@ def find_most_probable_path(G, start_node, end_node):
         end_node: The ending node ID.
     Returns:
     """
-    path = [start_node]
-    current_node = start_node
-    
+    path = []
+    if start_node == 0:
+        # start from the most probable initial node 
+        start_nodes = [node for node in G.nodes() if G.in_degree(node) == 0]
+        if start_nodes:
+            # Choose the start node with the highest probability
+            start_node = max(start_nodes, key=lambda n: G.nodes[n].get('prob', 0))
+            path[0] = start_node
+            current_node = start_node
+    else:
+        path = [start_node]
+        current_node = start_node
     while current_node != end_node:
         neighbors = list(G.successors(current_node))
         if not neighbors:
@@ -454,6 +446,39 @@ def find_most_probable_path(G, start_node, end_node):
     
     return path
 
+def random_path_walk(G, max_steps=100):
+    """Perform a random walk in a directed graph from start_node to end_node.
+    Args:
+        G: A directed graph (networkx DiGraph).
+        start_node: The starting node ID.
+        end_node: The ending node ID.
+        max_steps: Maximum number of steps to take in the random walk.
+    Returns:
+        path: A list of node IDs representing the path taken in the random walk.
+    """
+    start_nodes = [node for node in G.nodes() if G.in_degree(node) == 0]
+    # chose the start node with the highest probability
+    start_node = max(start_nodes, key=lambda n: G.nodes[n].get('prob', 0))
+    
+    path = [start_node]
+    current_node = start_node
+    steps = 0
+    end_node = [node for node in G.nodes() if G.out_degree(node) == 0]
+    
+    while current_node not in end_node and steps < max_steps:
+        neighbors = list(G.successors(current_node))
+        if not neighbors:
+            break  # No more neighbors to explore
+        
+        # Choose a random neighbor
+        next_node = np.random.choice(neighbors)
+        path.append(next_node)
+        current_node = next_node
+        steps += 1
+    
+    return path
+
+
 
 def path_pdf(data):
     """Calculate the path probability distribution (from the dataset)!, by simple counting the presence.
@@ -472,11 +497,13 @@ def path_pdf(data):
     
     # Calculate the total number of paths
     total_paths = sum(path_counts.values())
+    print(f"Total paths: {total_paths}") # check they should be the same as the number of rows in the dataset 
     
     # Create a probability distribution for each unique path
     path_probabilities = {path: count / total_paths for path, count in path_counts.items()}
     
     return path_probabilities
+
 def path_pdf_weights(data, type_edge_weight = 'probability'): 
     """Calculate the path probability distribution from the dataset, by using the weights of the edges in the graph.
 
@@ -495,12 +522,12 @@ def path_pdf_weights(data, type_edge_weight = 'probability'):
             for j in range(len(path) - 1):
                 u = path[j]
                 v = path[j + 1]
-                # add the probability of being in the first node 
-                if j == 0 and type_edge_weight == 'from_data':
+                if j == 0 and type_edge_weight == 'from_data': ## Probability of starting node
                     prob *= G.nodes[u].get('count', 1) / sum(G.nodes[n].get('count', 1) for n in G.nodes())
                 elif j == 0 and type_edge_weight == 'probability':
                     prob *= G.nodes[u].get('prob', 1)          
-                # multiply the probability of the edge
+                
+                # multiply the probability of the edge P(path = (C,B,A)) = P(C|B,A) * P(B|A) * P(A)
                 if G.has_edge(u, v):
                     prob *= G[u][v]['weight']
                 else:
@@ -513,6 +540,28 @@ def path_pdf_weights(data, type_edge_weight = 'probability'):
     else:
         path_probabilities = {path: 0 for path in path_probabilities}
     return path_probabilities
+
+def path_pdf_clustered_graph(dataset,save_paths_with_clustered_nodes = False, filename = "./data/clustered_paths"):
+    """Calculate the path probability distribution from the dataset, by using the weights of the edges in the graph.
+        However the paths are constrained to the paths that are present in the dataset.
+        at certin point we create the clustered graph from the dataset, and then we calculate the path probabilities based on the edges of the clustered graph.
+    Args:
+        data: pandas dataset, where each row represents a work-chain and each column represents a step in the work-chain.
+    Returns:
+        path_probabilities: A dictionary where keys are paths (tuples) and values are their probabilities.
+    """
+    # if cannot finde the file, create the clustered graph
+    if not os.path.exists(f'{filename}.csv'):
+        print(f"File {filename}.csv not found, creating the clustered graph...")
+        G_clust = cluster_nodes(dataset, group_size=3, save_paths_with_clustered_nodes=save_paths_with_clustered_nodes, filename= filename)
+    else:
+        print(f"File {filename}.csv found, loading the clustered graph...")
+        G_clust = graph_from_data(pd.read_csv(f'{filename}.csv', sep=';'))
+    
+    # Calculate the path probabilities based on the weights edges of the clustered graph
+    path_probabilities = path_pdf_weights(pd.read_csv(f'{filename}.csv', sep=';'))
+    # uno non serve all'altro perchè ho fatto tutto a partire dal dataset s
+    return path_probabilities, G_clust 
 
 def plot_path_pdf(path_probabilities,height = 400, width = 800 , show = False, save = False, filename = "path_probabilities.html"):
     """This function plot the path probability distribution as a bar chart and orders the paths from the most common to the least common.
@@ -597,27 +646,6 @@ def plot_path_abundance_comparison(path_probabilities1, path_probabilities2, nam
         fig.write_html(filename, include_plotlyjs='cdn', full_html=True)
     return fig
 
-def path_pdf_clustered_graph(dataset,save_paths_with_clustered_nodes = False, filename = "./data/clustered_paths"):
-    """Calculate the path probability distribution from the dataset, by using the weights of the edges in the graph.
-        However the paths are constrained to the paths that are present in the dataset.
-        at certin point we create the clustered graph from the dataset, and then we calculate the path probabilities based on the edges of the clustered graph.
-    Args:
-        data: pandas dataset, where each row represents a work-chain and each column represents a step in the work-chain.
-    Returns:
-        path_probabilities: A dictionary where keys are paths (tuples) and values are their probabilities.
-    """
-    # if cannot finde the file, create the clustered graph
-    if not os.path.exists(f'{filename}.csv'):
-        print(f"File {filename}.csv not found, creating the clustered graph...")
-        G_clust = cluster_nodes(dataset, group_size=3, save_paths_with_clustered_nodes=save_paths_with_clustered_nodes, filename= filename)
-    else:
-        print(f"File {filename}.csv found, loading the clustered graph...")
-        G_clust = graph_from_data(pd.read_csv(f'{filename}.csv', sep=';'))
-    
-    # Calculate the path probabilities based on the weights edges of the clustered graph
-    path_probabilities = path_pdf_weights(pd.read_csv(f'{filename}.csv', sep=';'))
-    
 
-    return path_probabilities, G_clust
 
     
