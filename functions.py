@@ -478,8 +478,6 @@ def random_path_walk(G, max_steps=100):
     
     return path
 
-
-
 def path_pdf(data):
     """Calculate the path probability distribution (from the dataset)!, by simple counting the presence.
     Args:
@@ -646,6 +644,74 @@ def plot_path_abundance_comparison(path_probabilities1, path_probabilities2, nam
         fig.write_html(filename, include_plotlyjs='cdn', full_html=True)
     return fig
 
+def plot_path_abundance_multiple_comparison(path_probabilities_list, names=None, show=False, save=False, filename="path_abundance_multiple_comparison.html"):
 
-
+    """ This function plots the path abundance comparison between multiple datasets as a bar chart.
+    """
+    if names is None:
+        names = [f"Dataset {i+1}" for i in range(len(path_probabilities_list))]
     
+    fig = go.Figure()
+    # fix the paths on the x axis before, so that the bars are aligned, set the x axis to the union of all paths without duplicates
+    all_paths = set()
+    for path_probabilities in path_probabilities_list:
+        all_paths.update(path_probabilities.keys())
+    all_paths = sorted(all_paths)  # Sort paths for consistent ordering
+    # Create a bar for each dataset
+
+    for i, path_probabilities in enumerate(path_probabilities_list):
+        paths = list(path_probabilities.keys())
+        probabilities = list(path_probabilities.values())
+        # Sort paths by probability
+        sorted_indices = np.argsort(probabilities)[::-1]
+        paths = [paths[i] for i in sorted_indices]
+        probabilities = [probabilities[i] for i in sorted_indices]
+        # Create a bar for the current dataset
+        fig.add_trace(go.Bar(
+            #x=[str(path) for path in all_paths],
+            y=[path_probabilities.get(path, 0) for path in all_paths],  # Fill missing paths with 0
+            name=names[i],
+            marker_color=pc.qualitative.Plotly[i % len(pc.qualitative.Plotly)],
+            opacity=0.6,
+            hovertext=[f"{path}: {prob:.2f}" for path, prob in zip(all_paths, [path_probabilities.get(path, 0) for path in all_paths])],
+        ))
+
+    fig.update_layout(
+        title='Path Abundance Comparison',
+        xaxis_title='Paths',
+        yaxis_title='Probability',
+        barmode='overlay',
+        height=400,
+        width=800
+    )
+    if show:
+        fig.show()
+    if save:        
+        fig.write_html(filename, include_plotlyjs='cdn', full_html=True)
+    return fig  
+
+
+"""
+From here some functions are taken inspiration from: 
+Author: E.J. Kroon
+
+v1 June 27, 2023
+
+Please refer to Kroon (in prep.) when using this program.
+
+Pathfinder is meant to compare, generate, and simulate ceramic
+chaînes opératoires. 
+
+This is a module of pathfinder. It randomly generates a user-
+specified number of chaînes opératoires and outputs these to
+a .csv file. See Kroon (in prep. Section 4.2) for a description 
+of this algorithm.
+
+The module makes use of separate, open source libraries
+in python: networkx, csv and random. See the documentation of 
+these respective libaries. The script is provided as is under
+a CC-BY 4.0 license.
+
+"""
+
+
