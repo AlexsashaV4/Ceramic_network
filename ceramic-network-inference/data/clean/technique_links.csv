@@ -1,0 +1,574 @@
+source,target
+Wet clay,Coiling
+Wet clay,Slab-building
+Wet clay,Modelling
+Wet clay,Molding
+Wet clay,Hammering_W
+Wet clay,Wheel throwing_RO
+Coiling,Slab-building
+Coiling,Modelling
+Coiling,Molding
+Coiling,Hammering_W
+Coiling,Wheel throwing_RO
+Coiling,Leather-hard
+Coiling,Scraping
+Coiling,Pressure
+Coiling,Beating
+Coiling,Wheel throwing_P
+Slab-building,Coiling
+Slab-building,Modelling
+Slab-building,Molding
+Slab-building,Hammering_W
+Slab-building,Wheel throwing_RO
+Slab-building,Leather-hard
+Slab-building,Scraping
+Slab-building,Pressure
+Slab-building,Beating
+Modelling,Coiling
+Modelling,Slab-building
+Modelling,Molding
+Modelling,Hammering_W
+Modelling,Wheel throwing_RO
+Modelling,Leather-hard
+Modelling,Scraping
+Modelling,Pressure
+Modelling,Beating
+Molding,Coiling
+Molding,Slab-building
+Molding,Modelling
+Molding,Hammering_W
+Molding,Wheel throwing_RO
+Molding,Leather-hard
+Molding,Scraping
+Molding,Pressure
+Molding,Beating
+Molding,Wheel throwing_P
+Hammering_W,Coiling
+Hammering_W,Slab-building
+Hammering_W,Modelling
+Hammering_W,Molding
+Hammering_W,Wheel throwing_RO
+Hammering_W,Leather-hard
+Hammering_W,Scraping
+Hammering_W,Pressure
+Hammering_W,Beating
+Wheel throwing_RO,Coiling
+Wheel throwing_RO,Slab-building
+Wheel throwing_RO,Modelling
+Wheel throwing_RO,Molding
+Wheel throwing_RO,Hammering_W
+Wheel throwing_RO,Leather-hard
+Wheel throwing_RO,Scraping
+Wheel throwing_RO,Pressure
+Wheel throwing_RO,Beating
+Wheel throwing_RO,Wheel throwing_P
+Leather-hard,Pushing
+Leather-hard,Shaving
+Leather-hard,Paddling
+Leather-hard,Hammering_LH
+Leather-hard,Trimming
+Leather-hard,Application separate element
+Leather-hard,Brushing
+Leather-hard,Leather hard smoothing
+Leather-hard,Dry
+Leather-hard,Softerning
+Leather-hard,Burnishing
+Leather-hard,Shining
+Leather-hard,Clay coating
+Leather-hard,Paddled impression
+Leather-hard,Simple incision
+Leather-hard,Pivoting incision
+Leather-hard,Decorative scraping
+Leather-hard,Excisions
+Leather-hard,Incrustation
+Leather-hard,Application
+Scraping,Leather-hard
+Scraping,Pressure
+Scraping,Beating
+Scraping,Wheel throwing_P
+Scraping,Application separate element
+Scraping,Wet smoothing
+Pressure,Leather-hard
+Pressure,Scraping
+Pressure,Beating
+Pressure,Wheel throwing_P
+Pressure,Application separate element
+Pressure,Wet smoothing
+Beating,Leather-hard
+Beating,Scraping
+Beating,Pressure
+Beating,Wheel throwing_P
+Beating,Application separate element
+Beating,Wet smoothing
+Pushing,Shaving
+Pushing,Paddling
+Pushing,Hammering_LH
+Pushing,Trimming
+Pushing,Application separate element
+Pushing,Brushing
+Pushing,Leather hard smoothing
+Shaving,Pushing
+Shaving,Paddling
+Shaving,Hammering_LH
+Shaving,Trimming
+Shaving,Application separate element
+Shaving,Brushing
+Shaving,Leather hard smoothing
+Paddling,Pushing
+Paddling,Shaving
+Paddling,Hammering_LH
+Paddling,Trimming
+Paddling,Application separate element
+Paddling,Brushing
+Paddling,Leather hard smoothing
+Hammering_LH,Pushing
+Hammering_LH,Shaving
+Hammering_LH,Paddling
+Hammering_LH,Trimming
+Hammering_LH,Application separate element
+Hammering_LH,Brushing
+Hammering_LH,Leather hard smoothing
+Wheel throwing_P,Leather-hard
+Wheel throwing_P,Scraping
+Wheel throwing_P,Pressure
+Wheel throwing_P,Beating
+Wheel throwing_P,Trimming
+Wheel throwing_P,Application separate element
+Wheel throwing_P,Wet smoothing
+Trimming,Pushing
+Trimming,Shaving
+Trimming,Paddling
+Trimming,Hammering_LH
+Trimming,Application separate element
+Trimming,Brushing
+Trimming,Leather hard smoothing
+Application separate element,Leather-hard
+Application separate element,Wet smoothing
+Application separate element,Brushing
+Application separate element,Leather hard smoothing
+Wet smoothing,Leather-hard
+Wet smoothing,Clay coating
+Wet smoothing,Simple impression
+Wet smoothing,Tilted impression
+Wet smoothing,Rolled impression
+Wet smoothing,Stamped impression
+Wet smoothing,Simple incision
+Wet smoothing,Pivoting incision
+Wet smoothing,Decorative scraping
+Wet smoothing,Excisions
+Wet smoothing,Application
+Wet smoothing,Modeling
+Brushing,Leather hard smoothing
+Brushing,Dry
+Brushing,Softerning
+Brushing,Burnishing
+Brushing,Shining
+Brushing,Clay coating
+Brushing,Paddled impression
+Brushing,Simple incision
+Brushing,Pivoting incision
+Brushing,Decorative scraping
+Brushing,Excisions
+Brushing,Application
+Leather hard smoothing,Brushing
+Leather hard smoothing,Dry
+Leather hard smoothing,Softerning
+Leather hard smoothing,Burnishing
+Leather hard smoothing,Shining
+Leather hard smoothing,Clay coating
+Leather hard smoothing,Paddled impression
+Leather hard smoothing,Simple incision
+Leather hard smoothing,Pivoting incision
+Leather hard smoothing,Decorative scraping
+Leather hard smoothing,Excisions
+Leather hard smoothing,Application
+Dry,Softerning
+Dry,Burnishing
+Dry,Shining
+Dry,Organic coating
+Dry,Graphite coating
+Dry,Silica coating
+Dry,Painting
+Dry,Simple incision
+Dry,Pivoting incision
+Dry,Decorative scraping
+Dry,Incrustation
+Dry,Open firing
+Dry,Enclosed firing
+Dry,Direct flame kilns
+Dry,Indirect flame kilns
+Dry,Radiant heat kilns
+Softerning,Dry
+Softerning,Burnishing
+Softerning,Shining
+Softerning,Clay coating
+Softerning,Organic coating
+Softerning,Graphite coating
+Softerning,Silica coating
+Softerning,Painting
+Softerning,Paddled impression
+Softerning,Simple incision
+Softerning,Pivoting incision
+Softerning,Decorative scraping
+Softerning,Excisions
+Softerning,Incrustation
+Softerning,Application
+Softerning,Open firing
+Softerning,Enclosed firing
+Softerning,Direct flame kilns
+Softerning,Indirect flame kilns
+Softerning,Radiant heat kilns
+Burnishing,Dry
+Burnishing,Softerning
+Burnishing,Shining
+Burnishing,Clay coating
+Burnishing,Organic coating
+Burnishing,Graphite coating
+Burnishing,Silica coating
+Burnishing,Painting
+Burnishing,Paddled impression
+Burnishing,Simple incision
+Burnishing,Pivoting incision
+Burnishing,Decorative scraping
+Burnishing,Excisions
+Burnishing,Incrustation
+Burnishing,Application
+Burnishing,Open firing
+Burnishing,Enclosed firing
+Burnishing,Direct flame kilns
+Burnishing,Indirect flame kilns
+Burnishing,Radiant heat kilns
+Shining,Dry
+Shining,Softerning
+Shining,Burnishing
+Shining,Clay coating
+Shining,Organic coating
+Shining,Graphite coating
+Shining,Silica coating
+Shining,Painting
+Shining,Paddled impression
+Shining,Simple incision
+Shining,Pivoting incision
+Shining,Decorative scraping
+Shining,Excisions
+Shining,Incrustation
+Shining,Application
+Shining,Open firing
+Shining,Enclosed firing
+Shining,Direct flame kilns
+Shining,Indirect flame kilns
+Shining,Radiant heat kilns
+Clay coating,Leather-hard
+Clay coating,Dry
+Clay coating,Softerning
+Clay coating,Burnishing
+Clay coating,Shining
+Clay coating,Simple impression
+Clay coating,Tilted impression
+Clay coating,Rolled impression
+Clay coating,Stamped impression
+Clay coating,Paddled impression
+Clay coating,Simple incision
+Clay coating,Pivoting incision
+Clay coating,Decorative scraping
+Clay coating,Excisions
+Clay coating,Incrustation
+Clay coating,Application
+Organic coating,Softerning
+Organic coating,Burnishing
+Organic coating,Shining
+Organic coating,Graphite coating
+Organic coating,Silica coating
+Organic coating,Smudging
+Organic coating,Painting
+Organic coating,Simple incision
+Organic coating,Pivoting incision
+Organic coating,Decorative scraping
+Organic coating,Engraving
+Organic coating,Incrustation
+Organic coating,Open firing
+Organic coating,Enclosed firing
+Organic coating,Direct flame kilns
+Organic coating,Indirect flame kilns
+Organic coating,Radiant heat kilns
+Graphite coating,Softerning
+Graphite coating,Burnishing
+Graphite coating,Shining
+Graphite coating,Organic coating
+Graphite coating,Silica coating
+Graphite coating,Smudging
+Graphite coating,Painting
+Graphite coating,Simple incision
+Graphite coating,Pivoting incision
+Graphite coating,Decorative scraping
+Graphite coating,Incrustation
+Graphite coating,Open firing
+Graphite coating,Enclosed firing
+Graphite coating,Direct flame kilns
+Graphite coating,Indirect flame kilns
+Graphite coating,Radiant heat kilns
+Silica coating,Softerning
+Silica coating,Burnishing
+Silica coating,Shining
+Silica coating,Organic coating
+Silica coating,Graphite coating
+Silica coating,Smudging
+Silica coating,Painting
+Silica coating,Simple incision
+Silica coating,Pivoting incision
+Silica coating,Decorative scraping
+Silica coating,Engraving
+Silica coating,Incrustation
+Silica coating,Open firing
+Silica coating,Enclosed firing
+Silica coating,Direct flame kilns
+Silica coating,Indirect flame kilns
+Silica coating,Radiant heat kilns
+Smudging,Organic coating
+Smudging,Graphite coating
+Smudging,Silica coating
+Smudging,Painting
+Smudging,Simple incision
+Smudging,Pivoting incision
+Smudging,Decorative scraping
+Smudging,Engraving
+Smudging,Incrustation
+Smudging,Open firing
+Smudging,Enclosed firing
+Smudging,Direct flame kilns
+Smudging,Indirect flame kilns
+Smudging,Radiant heat kilns
+Painting,Softerning
+Painting,Burnishing
+Painting,Shining
+Painting,Organic coating
+Painting,Graphite coating
+Painting,Silica coating
+Painting,Smudging
+Painting,Simple incision
+Painting,Pivoting incision
+Painting,Decorative scraping
+Painting,Engraving
+Painting,Excisions
+Painting,Incrustation
+Painting,Open firing
+Painting,Enclosed firing
+Painting,Direct flame kilns
+Painting,Indirect flame kilns
+Painting,Radiant heat kilns
+Simple impression,Leather-hard
+Simple impression,Clay coating
+Simple impression,Tilted impression
+Simple impression,Rolled impression
+Simple impression,Stamped impression
+Simple impression,Simple incision
+Simple impression,Pivoting incision
+Simple impression,Decorative scraping
+Simple impression,Excisions
+Simple impression,Application
+Simple impression,Modeling
+Tilted impression,Leather-hard
+Tilted impression,Clay coating
+Tilted impression,Simple impression
+Tilted impression,Rolled impression
+Tilted impression,Stamped impression
+Tilted impression,Simple incision
+Tilted impression,Pivoting incision
+Tilted impression,Decorative scraping
+Tilted impression,Excisions
+Tilted impression,Application
+Tilted impression,Modeling
+Rolled impression,Leather-hard
+Rolled impression,Clay coating
+Rolled impression,Simple impression
+Rolled impression,Tilted impression
+Rolled impression,Stamped impression
+Rolled impression,Simple incision
+Rolled impression,Pivoting incision
+Rolled impression,Decorative scraping
+Rolled impression,Excisions
+Rolled impression,Application
+Rolled impression,Modeling
+Stamped impression,Leather-hard
+Stamped impression,Clay coating
+Stamped impression,Simple impression
+Stamped impression,Tilted impression
+Stamped impression,Rolled impression
+Stamped impression,Simple incision
+Stamped impression,Pivoting incision
+Stamped impression,Decorative scraping
+Stamped impression,Excisions
+Stamped impression,Application
+Stamped impression,Modeling
+Paddled impression,Dry
+Paddled impression,Softerning
+Paddled impression,Burnishing
+Paddled impression,Shining
+Paddled impression,Clay coating
+Paddled impression,Simple incision
+Paddled impression,Pivoting incision
+Paddled impression,Decorative scraping
+Paddled impression,Excisions
+Paddled impression,Incrustation
+Paddled impression,Application
+Simple incision,Leather-hard
+Simple incision,Dry
+Simple incision,Softerning
+Simple incision,Burnishing
+Simple incision,Shining
+Simple incision,Clay coating
+Simple incision,Organic coating
+Simple incision,Graphite coating
+Simple incision,Silica coating
+Simple incision,Painting
+Simple incision,Simple impression
+Simple incision,Tilted impression
+Simple incision,Rolled impression
+Simple incision,Stamped impression
+Simple incision,Paddled impression
+Simple incision,Pivoting incision
+Simple incision,Decorative scraping
+Simple incision,Excisions
+Simple incision,Incrustation
+Simple incision,Application
+Simple incision,Modeling
+Pivoting incision,Leather-hard
+Pivoting incision,Dry
+Pivoting incision,Softerning
+Pivoting incision,Burnishing
+Pivoting incision,Shining
+Pivoting incision,Clay coating
+Pivoting incision,Organic coating
+Pivoting incision,Graphite coating
+Pivoting incision,Silica coating
+Pivoting incision,Painting
+Pivoting incision,Simple impression
+Pivoting incision,Tilted impression
+Pivoting incision,Rolled impression
+Pivoting incision,Stamped impression
+Pivoting incision,Paddled impression
+Pivoting incision,Simple incision
+Pivoting incision,Decorative scraping
+Pivoting incision,Excisions
+Pivoting incision,Incrustation
+Pivoting incision,Application
+Pivoting incision,Modeling
+Decorative scraping,Leather-hard
+Decorative scraping,Dry
+Decorative scraping,Softerning
+Decorative scraping,Burnishing
+Decorative scraping,Shining
+Decorative scraping,Clay coating
+Decorative scraping,Organic coating
+Decorative scraping,Graphite coating
+Decorative scraping,Silica coating
+Decorative scraping,Painting
+Decorative scraping,Simple impression
+Decorative scraping,Tilted impression
+Decorative scraping,Rolled impression
+Decorative scraping,Stamped impression
+Decorative scraping,Paddled impression
+Decorative scraping,Simple incision
+Decorative scraping,Pivoting incision
+Decorative scraping,Excisions
+Decorative scraping,Incrustation
+Decorative scraping,Application
+Decorative scraping,Modeling
+Engraving,Organic coating
+Engraving,Silica coating
+Engraving,Smudging
+Engraving,Painting
+Engraving,Incrustation
+Engraving,Open firing
+Engraving,Enclosed firing
+Engraving,Direct flame kilns
+Engraving,Indirect flame kilns
+Engraving,Radiant heat kilns
+Excisions,Leather-hard
+Excisions,Dry
+Excisions,Softerning
+Excisions,Burnishing
+Excisions,Shining
+Excisions,Clay coating
+Excisions,Painting
+Excisions,Simple impression
+Excisions,Tilted impression
+Excisions,Rolled impression
+Excisions,Stamped impression
+Excisions,Paddled impression
+Excisions,Simple incision
+Excisions,Pivoting incision
+Excisions,Decorative scraping
+Excisions,Incrustation
+Excisions,Application
+Excisions,Modeling
+Incrustation,Dry
+Incrustation,Softerning
+Incrustation,Burnishing
+Incrustation,Shining
+Incrustation,Organic coating
+Incrustation,Graphite coating
+Incrustation,Silica coating
+Incrustation,Smudging
+Incrustation,Open firing
+Incrustation,Enclosed firing
+Incrustation,Direct flame kilns
+Incrustation,Indirect flame kilns
+Incrustation,Radiant heat kilns
+Application,Leather-hard
+Application,Dry
+Application,Softerning
+Application,Burnishing
+Application,Shining
+Application,Clay coating
+Application,Simple impression
+Application,Tilted impression
+Application,Rolled impression
+Application,Stamped impression
+Application,Paddled impression
+Application,Simple incision
+Application,Pivoting incision
+Application,Decorative scraping
+Application,Excisions
+Application,Modeling
+Modeling,Leather-hard
+Modeling,Clay coating
+Modeling,Simple impression
+Modeling,Tilted impression
+Modeling,Rolled impression
+Modeling,Stamped impression
+Modeling,Simple incision
+Modeling,Pivoting incision
+Modeling,Decorative scraping
+Modeling,Excisions
+Modeling,Application
+Open firing,Organic coating
+Open firing,Silica coating
+Open firing,Smudging
+Open firing,Painting
+Open firing,Engraving
+Open firing,Incrustation
+Enclosed firing,Organic coating
+Enclosed firing,Silica coating
+Enclosed firing,Smudging
+Enclosed firing,Painting
+Enclosed firing,Engraving
+Enclosed firing,Incrustation
+Direct flame kilns,Organic coating
+Direct flame kilns,Silica coating
+Direct flame kilns,Smudging
+Direct flame kilns,Painting
+Direct flame kilns,Engraving
+Direct flame kilns,Incrustation
+Indirect flame kilns,Organic coating
+Indirect flame kilns,Silica coating
+Indirect flame kilns,Smudging
+Indirect flame kilns,Painting
+Indirect flame kilns,Engraving
+Indirect flame kilns,Incrustation
+Radiant heat kilns,Organic coating
+Radiant heat kilns,Silica coating
+Radiant heat kilns,Smudging
+Radiant heat kilns,Painting
+Radiant heat kilns,Engraving
+Radiant heat kilns,Incrustation

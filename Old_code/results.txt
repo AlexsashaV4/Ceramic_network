@@ -1,0 +1,28 @@
+Model: Non-Overlapping
+Accuracy: 0.3225
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.32      1.00      0.49        89
+           1       0.00      0.00      0.00        62
+           2       0.00      0.00      0.00        30
+           3       0.00      0.00      0.00        95
+
+    accuracy                           0.32       276
+   macro avg       0.08      0.25      0.12       276
+weighted avg       0.10      0.32      0.16       276
+
+Model: Overlapping
+Accuracy: 0.3225
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.32      1.00      0.49        89
+           1       0.00      0.00      0.00        62
+           2       0.00      0.00      0.00        30
+           3       0.00      0.00      0.00        95
+
+    accuracy                           0.32       276
+   macro avg       0.08      0.25      0.12       276
+weighted avg       0.10      0.32      0.16       276
+

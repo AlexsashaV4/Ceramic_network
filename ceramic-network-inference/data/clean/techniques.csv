@@ -1,0 +1,50 @@
+node_id,technique,tolerance
+1,Wet clay,W
+2,Coiling,W
+3,Slab-building,W
+4,Modelling,W
+5,Molding,W
+6,Hammering_W,W
+7,Wheel throwing_RO,W
+8,Leather-hard,W
+9,Scraping,W
+10,Pressure,W
+11,Beating,W
+12,Pushing,L
+13,Shaving,L
+14,Paddling,L
+15,Hammering_LH,L
+16,Wheel throwing_P,W
+17,Trimming,L
+18,Application separate element,W|L
+19,Wet smoothing,W
+20,Brushing,L
+21,Leather hard smoothing,L
+22,Dry,L
+23,Softerning,L|D
+24,Burnishing,L|D
+25,Shining,L|D
+26,Clay coating,W|L
+27,Organic coating,D|F
+28,Graphite coating,F
+29,Silica coating,D|F
+30,Smudging,F
+31,Painting,D|F
+32,Simple impression,W
+33,Tilted impression,W
+34,Rolled impression,W
+35,Stamped impression,W
+36,Paddled impression,L
+37,Simple incision,W|L|D
+38,Pivoting incision,W|L|D
+39,Decorative scraping,W|L|D
+40,Engraving,F
+41,Excisions,W|L
+42,Incrustation,L|D|F
+43,Application,W|L
+44,Modeling,W
+45,Open firing,D
+46,Enclosed firing,D
+47,Direct flame kilns,D
+48,Indirect flame kilns,D
+49,Radiant heat kilns,D

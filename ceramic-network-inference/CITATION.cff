@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it as below, and cite Kroon (2024) for the data."
+title: "Ceramic network inference: bodies of knowledge from chaînes opératoires"
+type: software
+authors:
+  - family-names: Ferraro
+    given-names: Alex
+  - family-names: Gili
+    given-names: Tommaso
+  - family-names: Dionigi
+    given-names: Pierfrancesco
+  - family-names: Garlaschelli
+    given-names: Diego
+  - family-names: Kroon
+    given-names: Erik J.
+date-released: 2026-09-29
+keywords:
+  - archaeology
+  - chaîne opératoire
+  - network science
+  - topic models
+  - stochastic block model
+references:
+  - type: book
+    title: "Serial Learners: Interactions between Funnel Beaker West and Corded Ware Communities in the Netherlands during the Third Millennium BCE from the Perspective of Ceramic Technology"
+    authors:
+      - family-names: Kroon
+        given-names: Erik J.
+    year: 2024
+    publisher:
+      name: Sidestone Press
+    doi: 10.59641/4e367hq
+  - type: dataset
+    title: "Serial Learners (appendices)"
+    authors:
+      - family-names: Kroon
+        given-names: Erik J.
+    doi: 10.17026/AR/FAXIOW
+    license: CC-BY-4.0

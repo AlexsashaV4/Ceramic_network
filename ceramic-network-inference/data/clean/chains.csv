@@ -1,0 +1,277 @@
+vessel_id,bok,n_steps,chain
+1,EFG,11,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+4,EFG,11,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+13,CW,10,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Simple incision > Leather-hard > Dry > Open firing
+14,CW,11,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Simple impression > Leather-hard > Shining > Dry > Open firing
+15,CW,10,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Simple incision > Leather-hard > Dry > Open firing
+16,CW,10,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Leather-hard > Dry > Burnishing > Open firing
+18,CW,10,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+19,EFG,12,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing > Smudging
+20,EFG,12,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing > Smudging
+22,EFG,10,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing > Smudging
+25,EFG,9,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing
+26,EFG,9,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing
+27,EFG,13,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing > Smudging > Incrustation
+28,EFG,9,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing
+31,CW,11,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple incision > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+32,EFG,12,Wet clay > Modelling > Coiling > Pressure > Application separate element > Scraping > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+33,EFG,12,Wet clay > Modelling > Coiling > Pressure > Application separate element > Scraping > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+34,EFG,7,Wet clay > Coiling > Pressure > Wet smoothing > Leather-hard > Dry > Open firing
+38,EFG,10,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing > Smudging
+40,EFG,11,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+42,EFG,9,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing
+43,EFG,9,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing
+44,EFG,7,Wet clay > Modelling > Pressure > Wet smoothing > Leather-hard > Dry > Open firing
+45,EFG,9,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing
+50,CW,10,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Tilted impression > Leather-hard > Shining > Dry > Open firing
+52,CW,10,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+53,CW,13,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Simple impression > Simple incision > Excisions > Leather-hard > Burnishing > Dry > Open firing
+54,CW,9,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple impression > Leather-hard > Dry > Open firing
+55,CW,10,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+56,CW,10,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple incision > Leather-hard > Shining > Dry > Open firing
+57,CW,11,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple incision > Leather-hard > Burnishing > Shining > Dry > Open firing
+60,CW,10,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+66,CW,11,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple incision > Simple impression > Leather-hard > Shining > Dry > Open firing
+67,CW,10,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple incision > Leather-hard > Burnishing > Dry > Open firing
+68,CW,8,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Leather-hard > Dry > Open firing
+69,CW,11,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+70,CW,10,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple incision > Leather-hard > Shining > Dry > Open firing
+75,CW,10,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple incision > Simple impression > Leather-hard > Dry > Open firing
+76,CW,12,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Application > Simple impression > Leather-hard > Shining > Dry > Open firing
+78,CW,11,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Simple incision > Leather-hard > Burnishing > Dry > Open firing
+79,CW,7,Wet clay > Modelling > Pressure > Wet smoothing > Leather-hard > Dry > Open firing
+80,CW,11,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple incision > Simple impression > Leather-hard > Shining > Dry > Open firing
+82,CW,9,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple impression > Leather-hard > Dry > Open firing
+83,CW,10,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple impression > Leather-hard > Shining > Dry > Open firing
+84,CW,9,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing
+85,CW,9,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Leather-hard > Shining > Dry > Open firing
+86,CW,11,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Leather-hard > Simple incision > Burnishing > Dry > Open firing
+87,CW,8,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Leather-hard > Dry > Open firing
+92,MI,7,Wet clay > Modelling > Pressure > Wet smoothing > Leather-hard > Dry > Open firing
+100,MI,11,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+103,MI,13,Wet clay > Modelling > Coiling > Pressure > Application separate element > Scraping > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing > Smudging
+104,MI,12,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Excisions > Leather-hard > Burnishing > Dry > Open firing > Incrustation
+105,LFG,11,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+106,LFG,10,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing
+107,MI,12,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Simple incision > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+109,MI,13,Wet clay > Modelling > Coiling > Pressure > Application separate element > Scraping > Wet smoothing > Simple incision > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+111,MI,7,Wet clay > Modelling > Pressure > Wet smoothing > Leather-hard > Dry > Open firing
+112,MI,13,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Simple incision > Simple impression > Excisions > Leather-hard > Burnishing > Dry > Open firing
+113,MI,11,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple incision > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+114,MI,12,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing > Smudging
+116,CW,10,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple impression > Leather-hard > Shining > Dry > Open firing
+117,CW,11,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Simple impression > Leather-hard > Shining > Dry > Open firing
+118,CW,11,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+119,CW,11,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple impression > Leather-hard > Burnishing > Shining > Dry > Open firing
+120,CW,12,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Simple impression > Leather-hard > Burnishing > Shining > Dry > Open firing
+126,CW,11,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple impression > Simple incision > Leather-hard > Burnishing > Dry > Open firing
+129,CW,11,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple impression > Simple incision > Leather-hard > Burnishing > Dry > Open firing
+130,CW,9,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple incision > Leather-hard > Dry > Open firing
+131,CW,11,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Simple impression > Leather-hard > Shining > Dry > Open firing
+132,CW,10,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Leather-hard > Simple incision > Burnishing > Dry > Open firing
+133,CW,11,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Simple incision > Leather-hard > Burnishing > Dry > Open firing
+134,CW,11,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Simple incision > Leather-hard > Burnishing > Dry > Open firing
+135,CW,11,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+136,CW,13,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Simple impression > Simple incision > Leather-hard > Burnishing > Shining > Dry > Open firing
+137,CW,10,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+140,CW,12,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Tilted impression > Simple incision > Leather-hard > Shining > Dry > Open firing
+142,CW,12,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple incision > Simple impression > Leather-hard > Shining > Dry > Open firing > Smudging
+143,MI,9,Wet clay > Coiling > Pressure > Wet smoothing > Excisions > Leather-hard > Burnishing > Dry > Open firing
+144,MI,9,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple incision > Leather-hard > Dry > Open firing
+145,CW,11,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple impression > Leather-hard > Simple incision > Burnishing > Dry > Open firing
+146,CW,9,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing
+147,CW,11,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple impression > Simple incision > Leather-hard > Shining > Dry > Open firing
+148,CW,10,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Tilted impression > Simple incision > Leather-hard > Dry > Open firing
+149,CW,8,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Leather-hard > Dry > Open firing
+150,CW,9,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Leather-hard > Dry > Open firing
+151,MI,7,Wet clay > Modelling > Pressure > Wet smoothing > Leather-hard > Dry > Open firing
+152,CW,8,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Leather-hard > Dry > Open firing
+154,CW,8,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Leather-hard > Dry > Open firing
+155,CW,10,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Simple incision > Leather-hard > Dry > Open firing
+156,CW,11,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple incision > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+157,CW,11,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Simple incision > Leather-hard > Burnishing > Dry > Open firing
+159,CW,11,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Simple incision > Leather-hard > Burnishing > Dry > Open firing
+160,CW,11,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple incision > Simple impression > Leather-hard > Shining > Dry > Open firing
+161,CW,11,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple impression > Excisions > Leather-hard > Burnishing > Dry > Open firing
+162,CW,10,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple incision > Leather-hard > Shining > Dry > Open firing
+163,CW,11,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple impression > Leather-hard > Simple incision > Burnishing > Dry > Open firing
+164,CW,11,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple impression > Leather-hard > Shining > Dry > Open firing > Smudging
+165,CW,11,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple incision > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+166,CW,11,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+168,CW,12,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Simple impression > Simple incision > Leather-hard > Shining > Dry > Open firing
+169,CW,11,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+175,CW,11,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple impression > Leather-hard > Shining > Dry > Open firing > Smudging
+176,CW,11,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple incision > Leather-hard > Shining > Dry > Open firing > Smudging
+188,MI,11,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+189,MI,11,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+190,MI,12,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Excisions > Simple impression > Leather-hard > Shining > Dry > Open firing
+191,MI,10,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+192,EFG,12,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Simple incision > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+193,EFG,10,Wet clay > Modelling > Coiling > Pressure > Application separate element > Scraping > Wet smoothing > Leather-hard > Dry > Open firing
+194,EFG,12,Wet clay > Modelling > Coiling > Pressure > Application separate element > Scraping > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+195,EFG,12,Wet clay > Modelling > Coiling > Pressure > Application separate element > Scraping > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+196,EFG,7,Wet clay > Modelling > Pressure > Wet smoothing > Leather-hard > Dry > Open firing
+197,EFG,9,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing
+198,EFG,12,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing > Incrustation
+199,EFG,10,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Leather-hard > Burnishing > Shining > Dry > Open firing
+200,EFG,9,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Leather-hard > Dry > Open firing
+201,EFG,10,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Leather-hard > Burnishing > Shining > Dry > Open firing
+202,EFG,11,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple incision > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+203,EFG,9,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing
+204,EFG,9,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing
+205,EFG,9,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing
+206,EFG,9,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing
+207,EFG,9,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing
+208,EFG,10,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple incision > Leather-hard > Burnishing > Dry > Open firing
+209,EFG,12,Wet clay > Modelling > Coiling > Pressure > Application separate element > Scraping > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+210,EFG,11,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing > Smudging
+211,EFG,11,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing > Smudging
+213,EFG,12,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Simple incision > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+214,EFG,10,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing
+215,EFG,10,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple incision > Leather-hard > Burnishing > Dry > Open firing
+217,EFG,10,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+218,EFG,11,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Simple incision > Leather-hard > Burnishing > Dry > Open firing
+219,EFG,10,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing > Smudging
+220,EFG,12,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing > Smudging
+221,EFG,12,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Application > Excisions > Leather-hard > Burnishing > Dry > Open firing
+222,EFG,8,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Leather-hard > Dry > Open firing
+223,EFG,11,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+224,EFG,11,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Excisions > Leather-hard > Burnishing > Dry > Open firing
+225,EFG,11,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+226,EFG,10,Wet clay > Coiling > Pressure > Application separate element > Wet smoothing > Tilted impression > Leather-hard > Burnishing > Dry > Open firing
+228,EFG,8,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Leather-hard > Dry > Open firing
+230,EFG,9,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing
+231,EFG,9,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing
+232,EFG,10,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing
+233,EFG,12,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Simple impression > Simple incision > Leather-hard > Burnishing > Dry > Open firing
+234,EFG,11,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Excisions > Leather-hard > Burnishing > Dry > Open firing
+235,EFG,10,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing
+236,EFG,10,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing
+237,EFG,10,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Tilted impression > Leather-hard > Burnishing > Dry > Open firing
+238,MI,11,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple incision > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+239,MI,13,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Simple impression > Simple incision > Leather-hard > Burnishing > Shining > Dry > Open firing
+240,MI,12,Wet clay > Modelling > Coiling > Pressure > Scraping > Application separate element > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+241,MI,12,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Simple impression > Leather-hard > Excisions > Burnishing > Dry > Open firing
+242,MI,13,Wet clay > Modelling > Coiling > Pressure > Application separate element > Scraping > Wet smoothing > Excisions > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+244,MI,10,Wet clay > Modelling > Pressure > Wet smoothing > Simple incision > Simple impression > Leather-hard > Shining > Dry > Open firing
+245,MI,9,Wet clay > Modelling > Coiling > Pressure > Scraping > Leather-hard > Shining > Dry > Open firing
+246,MI,11,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple incision > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+247,MI,11,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple impression > Simple incision > Leather-hard > Burnishing > Dry > Open firing
+249,MI,10,Wet clay > Modelling > Coiling > Pressure > Scraping > Application separate element > Wet smoothing > Leather-hard > Dry > Open firing
+250,MI,9,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing
+251,LFG,11,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+252,MI,10,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple incision > Leather-hard > Burnishing > Dry > Open firing
+253,MI,10,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+254,MI,11,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+255,LFG,7,Wet clay > Modelling > Pressure > Wet smoothing > Leather-hard > Dry > Open firing
+258,LFG,10,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing
+259,MI,10,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple incision > Leather-hard > Burnishing > Dry > Open firing
+260,MI,9,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple impression > Leather-hard > Dry > Open firing
+261,MI,9,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing
+262,LFG,9,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Leather-hard > Dry > Open firing
+263,LFG,11,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+264,MI,13,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Simple impression > Excisions > Leather-hard > Burnishing > Dry > Open firing > Incrustation
+265,MI,12,Wet clay > Coiling > Pressure > Scraping > Application separate element > Wet smoothing > Simple impression > Leather-hard > Excisions > Burnishing > Dry > Open firing
+266,MI,11,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Simple incision > Leather-hard > Burnishing > Dry > Open firing
+267,MI,12,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Simple impression > Leather-hard > Excisions > Burnishing > Dry > Open firing
+268,MI,14,Wet clay > Modelling > Coiling > Pressure > Application separate element > Scraping > Wet smoothing > Simple impression > Excisions > Leather-hard > Burnishing > Dry > Open firing > Incrustation
+269,MI,12,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple incision > Simple impression > Excisions > Leather-hard > Burnishing > Dry > Open firing
+270,MI,14,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Simple incision > Simple impression > Leather-hard > Burnishing > Dry > Open firing > Smudging > Incrustation
+271,MI,12,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Simple incision > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+272,MI,8,Wet clay > Modelling > Pressure > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing
+273,MI,11,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple incision > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+274,MI,10,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Excisions > Leather-hard > Burnishing > Dry > Open firing
+275,MI,10,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Leather-hard > Simple incision > Burnishing > Dry > Open firing
+276,MI,11,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+277,MI,7,Wet clay > Modelling > Pressure > Wet smoothing > Leather-hard > Dry > Open firing
+278,MI,8,Wet clay > Modelling > Pressure > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing
+279,MI,12,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing > Smudging
+280,MI,10,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+281,MI,9,Wet clay > Coiling > Pressure > Wet smoothing > Simple incision > Leather-hard > Burnishing > Dry > Open firing
+282,MI,11,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+283,MI,10,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Leather-hard > Shining > Dry > Open firing
+284,MI,11,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple impression > Simple incision > Leather-hard > Burnishing > Dry > Open firing
+285,MI,11,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple impression > Simple incision > Leather-hard > Burnishing > Dry > Open firing
+286,MI,10,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple incision > Leather-hard > Burnishing > Dry > Open firing
+287,MI,11,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple impression > Leather-hard > Burnishing > Shining > Dry > Open firing
+288,MI,11,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing > Smudging
+289,MI,10,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple incision > Leather-hard > Burnishing > Dry > Open firing
+290,LFG,10,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing
+291,MI,11,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing > Smudging
+292,MI,15,Wet clay > Modelling > Coiling > Pressure > Application separate element > Scraping > Wet smoothing > Simple impression > Leather-hard > Excisions > Burnishing > Dry > Open firing > Smudging > Incrustation
+293,MI,7,Wet clay > Modelling > Pressure > Wet smoothing > Leather-hard > Dry > Open firing
+294,LFG,11,Wet clay > Coiling > Pressure > Wet smoothing > Application > Simple incision > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+295,MI,13,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing > Smudging > Incrustation
+296,MI,10,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+297,MI,11,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Excisions > Leather-hard > Simple incision > Burnishing > Dry > Open firing
+300,MI,13,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Excisions > Simple impression > Leather-hard > Burnishing > Dry > Open firing > Incrustation
+301,MI,12,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing > Smudging
+302,MI,11,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+303,MI,11,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing > Smudging
+304,MI,9,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing
+305,MI,10,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Excisions > Leather-hard > Burnishing > Dry > Open firing
+306,CW,10,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Simple impression > Leather-hard > Dry > Open firing
+307,CW,11,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Simple impression > Leather-hard > Shining > Dry > Open firing
+308,CW,11,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Simple incision > Leather-hard > Shining > Dry > Open firing
+309,CW,10,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple incision > Leather-hard > Shining > Dry > Open firing
+310,CW,11,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Simple incision > Leather-hard > Shining > Dry > Open firing
+311,EFG,11,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+312,CW,11,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Simple incision > Leather-hard > Shining > Dry > Open firing
+313,CW,11,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple incision > Tilted impression > Leather-hard > Burnishing > Dry > Open firing
+314,CW,9,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple incision > Leather-hard > Dry > Open firing
+315,MI,11,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Leather-hard > Burnishing > Shining > Dry > Open firing
+316,MI,10,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing > Smudging
+317,MI,13,Wet clay > Modelling > Coiling > Pressure > Scraping > Application separate element > Wet smoothing > Simple incision > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+318,MI,11,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple incision > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+319,MI,11,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+320,MI,10,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+321,MI,11,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+322,MI,10,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing
+323,MI,11,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing > Smudging
+324,MI,9,Wet clay > Modelling > Coiling > Pressure > Leather-hard > Leather hard smoothing > Burnishing > Dry > Open firing
+325,EFG,10,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple incision > Leather-hard > Burnishing > Dry > Open firing
+326,CW,10,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple impression > Leather-hard > Shining > Dry > Open firing
+327,CW,11,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple incision > Tilted impression > Leather-hard > Shining > Dry > Open firing
+328,CW,12,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Simple incision > Simple impression > Leather-hard > Shining > Dry > Open firing
+329,CW,10,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+330,CW,11,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple incision > Simple impression > Leather-hard > Shining > Dry > Open firing
+331,CW,10,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Simple incision > Leather-hard > Dry > Open firing
+332,CW,11,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple incision > Leather-hard > Burnishing > Shining > Dry > Open firing
+333,CW,11,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Simple impression > Leather-hard > Shining > Dry > Open firing
+334,CW,12,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Simple incision > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+335,CW,11,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Tilted impression > Simple incision > Leather-hard > Dry > Open firing
+337,CW,11,Wet clay > Coiling > Pressure > Scraping > Wet smoothing > Simple incision > Leather-hard > Shining > Dry > Open firing > Smudging
+338,MI,14,Wet clay > Modelling > Coiling > Pressure > Application separate element > Scraping > Wet smoothing > Simple incision > Simple impression > Leather-hard > Burnishing > Dry > Open firing > Smudging
+339,MI,11,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Excisions > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+340,MI,10,Wet clay > Modelling > Pressure > Application separate element > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+341,MI,8,Wet clay > Modelling > Pressure > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing
+342,MI,11,Wet clay > Modelling > Coiling > Pressure > Scraping > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing > Smudging
+343,MI,8,Wet clay > Modelling > Pressure > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing
+344,MI,7,Wet clay > Modelling > Pressure > Wet smoothing > Leather-hard > Dry > Open firing
+345,MI,8,Wet clay > Modelling > Pressure > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing
+346,MI,12,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing > Incrustation
+347,MI,10,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+348,MI,10,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+349,MI,10,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+350,MI,8,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Leather-hard > Dry > Open firing
+351,LFG,10,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing
+353,LFG,10,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing
+354,LFG,10,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing
+355,LFG,11,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Excisions > Leather-hard > Burnishing > Dry > Open firing
+357,LFG,11,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+358,LFG,11,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+359,LFG,10,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing
+361,LFG,11,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+363,LFG,10,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing
+364,LFG,10,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing
+365,LFG,10,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing
+367,LFG,10,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing
+368,LFG,10,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing
+369,LFG,12,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Simple incision > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+370,LFG,9,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing
+371,LFG,9,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing
+372,LFG,10,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+373,LFG,9,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing
+374,LFG,11,Wet clay > Modelling > Coiling > Pressure > Wet smoothing > Simple incision > Simple impression > Leather-hard > Burnishing > Dry > Open firing
+375,LFG,10,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Leather-hard > Burnishing > Dry > Open firing
+376,LFG,12,Wet clay > Modelling > Coiling > Pressure > Application separate element > Wet smoothing > Simple incision > Simple impression > Leather-hard > Burnishing > Dry > Open firing

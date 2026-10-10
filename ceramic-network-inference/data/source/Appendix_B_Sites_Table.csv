@@ -1,0 +1,105 @@
+Site ID;Site name;Municipality;Region;Country;specific COs;Petrographic sample;BoKs;Site type;Longitude;Latitude;Approximate position;Literature;Location
+1;Uddelermeer;Apeldoorn;Gelderland;the Netherlands;TRUE;TRUE;FBW;flat grave cemetery;5,761342;52,245983;FALSE;"Bakker 1979, pp, 194-6; B19-20; Holwerda 1909; 1911; 1912";RMO
+3;Elburgseweg-Niersen;Epe;Gelderland;the Netherlands;FALSE;TRUE;FBW;unknown;5,907828;52,300068;TRUE;RMO inventaris;RMO
+6;Vaassen - tumuli;Epe;Gelderland;the Netherlands;FALSE;TRUE;CW;barrow;5,930703;52,281797;FALSE;Lanting and Van der Waals 1971;RMO
+7;Bennekom - Landgoed Pabst;Ede;Gelderland;the Netherlands;FALSE;TRUE;CW;barrow;5,675556;51,999444;FALSE;RMO inventaris;RMO
+8;Uddelermeer-Vindplaats IV;Apeldoorn;Gelderland;the Netherlands;TRUE;FALSE;CW;barrow;5,75136;52,24557;TRUE;"Bursch 1933; Wentink 2020 (database)";RMO
+9;Uddelermeer - heuvel E;Uddel;Gelderland;the Netherlands;TRUE;FALSE;CW;barrow;5,76427;52,24805;FALSE;"Holwerda 1911; Wentink 2020 (database)";RMO
+10;Ermelose heide- tumulus XXVIII;Ermelo;Gelderland;the Netherlands;TRUE;FALSE;CW;barrow;5,68218;52,27956;FALSE;"Remouchamps 1923; Bursch 1933; Modderman 1954, p, 33; Van Sprang 1993 p, 55; Wentink 2020 (database)";RMO
+11;Dobbe Gelle;Niersen;Gelderland;the Netherlands;TRUE;FALSE;CW;barrow;5,88675;52,29332;FALSE;"Holwerda 1908; Wentink 2020 (database)";RMO
+12;Houtdorperveld-Heuvel I;Speuld;Gelderland;the Netherlands;TRUE;FALSE;CW;barrow;5,713382;52,250867;TRUE;"Bursch 1933; Wentink 2020 (database)";RMO
+14;Ugchelen;Ugchelen;Gelderland;the Netherlands;TRUE;FALSE;FBW;flat grave cemetery;5,93107;52,17774;FALSE;Bakker 1979, pp, 196-7;RMO
+17;Oostereng - heuvel heuvel 4;Bennekom;Ede;the Netherlands;TRUE;FALSE;CW;barrow;5,711961;51,996604;TRUE;"Bursch 1933; Wentink 2020 (database)";RMO
+18;O2;Mander;Overijssel;the Netherlands;TRUE;TRUE;FBW;megalith/flat grave cemetery;6,841292;52,456792;FALSE;"Lanting and Brindley 2004; Ufkes 1992, 1993";PDO
+19;Leuvenumse beek;Ermelo;Gelderland;the Netherlands;TRUE;FALSE;CW;unknown;5,60704;52,28529;FALSE;"Modderman 1962, pp, 13-4; Van Sprang 1993, p, 46";GIA
+21;Unknown;Unknown;Groningen;the Netherlands;FALSE;TRUE;CW;unknown;;;FALSE;GIA inventaris;GIA
+23;Annen-Holtkampen;Aa en Hunze;Drenthe;the Netherlands;TRUE;TRUE;CW;flat grave;6,714929;53,059538;FALSE;"Jager 1985, pp, 206-7; Harsema 1976, pp, 179; 208";GIA
+25;Steentijdheuvel - Emmen;Emmen;Drenthe;the Netherlands;FALSE;TRUE;CW;barrow;6,899444;52,781111;TRUE;"GIA inventaris; cf, Van Giffen 1927 Pl, 154:80-1?";GIA
+26;Gieten;Aa en Hunze;Drenthe;the Netherlands;FALSE;TRUE;CW;barrow;6,763056;53,005278;TRUE;GIA inventaris;GIA
+27;Hijkerveld;Midden-Drenthe;Drenthe;the Netherlands;FALSE;TRUE;CW;flat grave cemetery;6,474325;52,913601;TRUE;"cf, Harsema 1972a, pp, 54-5; 1972b, p, 121";GIA
+28;Borger-Drouwenerweg;Borger-Odoorn;Drenthe;the Netherlands;TRUE;TRUE;CW;barrow;6,78919;52,931016;TRUE;Schoneveld 1988;GIA
+29;Noordbarge;Emmen;Drenthe;the Netherlands;TRUE;FALSE;CW;flat grave cemetery;6,895742;52,77204;FALSE;"Arnoldussen and Drenth 2015; cf, Harsema 1976, p, 39";GIA
+30;Hijkerveld;Midden-Drenthe;Drenthe;the Netherlands;TRUE;FALSE;CW;flat grave cemetery;6,489966;53,147651;FALSE;Arnoldussen and De Vries 2014;GIA
+33;Fochteloo - Bundergraf;Ooststellingswerf;Friesland;the Netherlands;FALSE;TRUE;CW;flat grave;6,350452;52,99459;FALSE;cf, Lanting 2008, p, 127;GIA
+34;Havelte-Koningskamp;Westerveld;Drenthe;the Netherlands;TRUE;TRUE;CW;flat grave cemetery;6,240919;52,775199;TRUE;"Harsema 1974, pp, 63-4; 111";GIA
+35;De Eese - Tumulus V;Steenwijkerland;Overijssel;the Netherlands;TRUE;TRUE;CW;barrow;6,123282;52,851068;TRUE;"Van Giffen 1930b, pp, 139-140; 1930a, fig, 103";GIA
+38;Weg Gasteren-Anloo;Aa en Hunze;Drenthe;the Netherlands;TRUE;FALSE;CW;barrow;6,683965;53,038355;TRUE;Van Giffen 1939, pp, 17-8;GIA
+40;Eeserveld - grafheuvels;Steenwijkerland;Overijssel;the Netherlands;TRUE;TRUE;CW;barrow;6,106837;52,826374;TRUE;"Helbers 1968, p, 151; Van der Waals 1968, pp, 49-50";GIA
+44;D6a;Tynaarloo;Drenthe;the Netherlands;TRUE;TRUE;FBW;megalith;6,63343;53,07363;FALSE;Brindley et al, 2002;DMA
+45;D9;Aa en Hunze;Drenthe;the Netherlands;TRUE;TRUE;FBW/CW;megalith;6,715381;53,061444;FALSE;De Groot 1988;DMA
+46;Bronnegerstraat-Nabij D27;Borger-Odoorn;Drenthe;the Netherlands;TRUE;FALSE;CW;barrow;6,798982;52,931243;TRUE;Kooi and Harsema 1987, p, 67;DMA
+47;Landgoed de Eese - Heuvel I4;Westerveld;Drenthe;the Netherlands;TRUE;FALSE;CW;barrow;6,134677;52,84671;TRUE;Helbers 1958, pp, 143-4;DMA
+48;Drouwen-kringgrepurnenveld;Borger-Odoorn;Drenthe;the Netherlands;TRUE;FALSE;CW;unknown;6,796389;52,952222;TRUE;"Van Giffen 1941a, pp, 19; 20-1";DMA
+49;Rolde, bij tumuliveld en spoor;Aa en Hunze;Drenthe;the Netherlands;TRUE;FALSE;CW;unknown;6,641758;52,989813;TRUE;DMA inventaris;DMA
+51;Sleen-Kruidhaarsveld;Coevorden;Drenthe;the Netherlands;TRUE;FALSE;FBW/CW;flat grave cemetery;6,783534;52,770753;TRUE;Van Giffen 1937c;DMA
+52;Halerzand, Beilen;Midden-Drenthe;Drenthe;the Netherlands;TRUE;FALSE;CW;unknown;6,54077;52,920328;TRUE;DMA inventaris;DMA
+54;Weerdinge-steenkransheuvel;Emmen;Drenthe;the Netherlands;TRUE;FALSE;CW;barrow;6,906501;52,812247;TRUE;"cf, Van Giffen 1936a; Van Giffen 1936c, pp, 20-1";DMA
+55;Anloo-Evertsbos graf D;Aa en Hunze;Drenthe;the Netherlands;TRUE;FALSE;CW;flat grave cemetery;6,71701;53,03544;FALSE;"Waterbolk 1959; 1960; Jager 1985, p, 220; fig, 28";DMA
+56;Sleen-Kruidhaarsveld;Coevorden;Drenthe;the Netherlands;TRUE;FALSE;CW;flat grave cemetery;6,783534;52,770753;TRUE;Van Giffen 1937c;DMA
+57;Anloo tumulus II;Aa en Hunze;Drenthe;the Netherlands;TRUE;FALSE;CW;barrow;6,70094;53,05601;FALSE;"Van Giffen and Glasbergen 1954; Jager 1985, p, 209; fig, 12";DMA
+58;Tumulus c, Eext-Schaapdijksweg;Aa en Hunze;Drenthe;the Netherlands;TRUE;FALSE;CW;barrow;6,741483;53,036115;TRUE;"Waterbolk 1957; Glasbergen 1957";DMA
+59;NW v, D11;Aa en Hunze;Drenthe;the Netherlands;TRUE;FALSE;CW;barrow;6,707928;53,0302;TRUE;DMA inventaris;DMA
+60;Tumulus III, Noordsche veld, Zeijen, Vries;Tynaarlo;Drenthe;the Netherlands;TRUE;FALSE;CW;barrow;6,527821;53,064282;TRUE;"DMA inventaris; Van Giffen 1930b, pp, 130-4; 1930a, Taf, 93";DMA
+61;Jodenbergje;Tynaarlo;Drenthe;the Netherlands;TRUE;FALSE;CW;barrow;6,52612;53,05583;FALSE;"Van Giffen 1936b; 1936c, pp, 20; Van der Waals 1964a, fig, 9";DMA
+62;Rhee;Assen;Drenthe;the Netherlands;TRUE;FALSE;CW;flat grave cemetery;6,559918;53,037405;TRUE;Van Giffen 1938b, p, 98, afb, 4;DMA
+63;Anloo, burgermeester;Anloo;Drenthe;the Netherlands;TRUE;FALSE;CW;unknown;6,699444;53,043333;TRUE;DMA inventaris;DMA
+65;Taarlose weg, Vries;Tynaarlo;Drenthe;the Netherlands;TRUE;FALSE;CW;flat grave;6,584137;53,062725;TRUE;Van der Waals 1964b, pp, 222-3;DMA
+66;Unknown location;Unknown;Drenthe;the Netherlands;TRUE;FALSE;CW;unknown;;;FALSE;DMA inventaris;DMA
+67;Balloo, Rolde;Aa en Hunze;Drenthe;the Netherlands;TRUE;TRUE;CW;barrow;6,630696;52,996904;FALSE;"Van Giffen 1935, pp, 14; 17-8";DMA
+68;Zuidlaren;Tynaarlo;Drenthe;the Netherlands;TRUE;FALSE;CW;unknown;6,659973;53,093276;TRUE;Van Giffen 1938a, p, 16;DMA
+69;Kamp De Vledders, Westervelde;Noordenveld;Drenthe;the Netherlands;TRUE;FALSE;CW;flat grave;6,450274;53,037846;FALSE;DMA inventaris;DMA
+70;Molen te Beilen;Midden-Drenthe;Drenthe;the Netherlands;TRUE;FALSE;CW;flat grave;6,511111;52,856667;TRUE;"Van der Waals 1964a, pp, 181-2; fig, 7";DMA
+71;Eext-Vijzelkampen;Aa en Hunze;Drenthe;the Netherlands;TRUE;FALSE;CW;unknown;6,76125;53,01993;FALSE;"Van Giffen 1939, p, 17; Jager 1985, p, 231; fig, 37";DMA
+72;Esch te Peelo;Assen;Drenthe;the Netherlands;TRUE;FALSE;CW;unknown;6,571227;53,020435;FALSE;"Van Giffen 1937b, p, 14-5; 22";DMA
+74;Hooghalen, Halerzand;Midden-Drenthe;Drenthe;the Netherlands;TRUE;FALSE;CW;unknown;6,554419;52,929133;TRUE;DMA inventaris;DMA
+75;Heuvel III, Vredenheim, Rolde;Aa en Hunze;Drenthe;the Netherlands;TRUE;FALSE;CW;barrow;6,655687;52,949016;TRUE;Van Giffen 1942, pp, 103-11, afb, 19;DMA
+76;Tumulus b, Eext-Schaapdijksweg;Aa en Hunze;Drenthe;the Netherlands;TRUE;FALSE;CW;barrow;6,741483;53,036115;TRUE;"Van Giffen 1924, p, 215; Glasbergen 1957";DMA
+77;Eext-tumulus Galgenwandveen III;Aa en Hunze;Drenthe;the Netherlands;TRUE;TRUE;CW;barrow;6,72919;53,02892;FALSE;"Lanting and Van der Waals 1971; 1976; Jager 1985, p, 229; fig, 34";DMA
+78;Tumulus II, Anloo;Aa en Hunze;Drenthe;the Netherlands;TRUE;FALSE;CW;barrow;6,70821;53,04973;FALSE;"Brunsting 1943; Jager 1985, p, 211; fig,16";DMA
+79;Emmen-onbekend;Emmen;Drenthe;the Netherlands;TRUE;TRUE;CW;unknown;6,883333;52,783333;TRUE;DMA inventaris;DMA
+80;Molen n, of Beilen;Midden-Drenthe;Drenthe;the Netherlands;FALSE;TRUE;CW;unknown;6,511238;52,860514;TRUE;DMA inventaris;DMA
+81;Holslootbrug - Sleen;Coevorden;Drenthe;the Netherlands;FALSE;TRUE;CW;flat grave;6,794376;52,729439;TRUE;Helbers 1966, p, 76;DMA
+82;Heuvel I, Eext, Anloo;Aa en Hunze;Drenthe;the Netherlands;FALSE;TRUE;CW;barrow;6,710469;52,989162;TRUE;Van Giffen 1942, pp, 109-11, fig, 22;DMA
+83;Hees-Ruinen;De Wolden;Drenthe;the Netherlands;TRUE;TRUE;CW;flat grave;6,368728;52,74922;TRUE;"Waterbolk 1958, pp, 13-4, fig,4; Helbers 1959, p, 293";DMA
+84;Gasteren, tumulus;Aa en Hunze;Drenthe;the Netherlands;TRUE;FALSE;CW;barrow;6,6783;53,03703;FALSE;"Van Giffen 1941b; Jager 1985, p, 213; fig, 17";DMA
+85;Tumulus I, Noordsche Veld, Zeijen, Vries;Tynaarlo;Drenthe;the Netherlands;FALSE;TRUE;CW;barrow;6,527821;53,064282;TRUE;"DMA inventaris; cf, Van Giffen 1930a, taf, 88 abb 83,4";DMA
+86;D30;Borger-Odoorn;Drenthe;the Netherlands;TRUE;TRUE;FBW/CW;megalith;6,845683;52,891517;FALSE;Brindley and Lanting 1992;DMA
+88;Valtherweg, Weerdinge;Emmen;Drenthe;the Netherlands;FALSE;TRUE;CW;unknown;6,913783;52,827715;TRUE;DMA inventaris;DMA
+90;Grollo-Zuideres;Aa en Hunze;Drenthe;the Netherlands;FALSE;TRUE;CW;flat grave;6,671824;52,907294;TRUE;"Van der Waals 1965, pp, 208-9; Helbers 1965, p, 110";DMA
+92;Anlo-Schuilingsoord;Aa en Hunze;Drenthe;the Netherlands;FALSE;TRUE;CW;flat grave;6,70201;53,073918;TRUE;Helbers 1960, p, 122;DMA
+95;Baalderesch;Hardenberg;Overijssel;the Netherlands;TRUE;TRUE;FBW;flat grave cemetery;6,63843;52,58798;TRUE;"Ter Kuile 1938; Brouwer 2014";PDO
+96;Denenkamp-Klokkenberg;Twente;Overijssel;the Netherlands;TRUE;FALSE;FBW;flat grave cemetery;7,008889;52,379444;TRUE;"Bakker and Van der Waals 1973; PDO inventaris";PDO
+97;Ekelenberg - Zuidwolde;De Wolden;Drenthe;the Netherlands;TRUE;TRUE;FBW;flat grave cemetery;6,43297;52,66196;TRUE;Van Giffen 1937a;DMA
+98;D21 - Bronneger;Borger-Odoorn;Drenthe;the Netherlands;TRUE;TRUE;FBW;megalith;6,800111;52,944128;FALSE;Van Giffen 1927;GIA
+99;D53;Westerveld;Drenthe;the Netherlands;TRUE;FALSE;FBW;megalith;6,2183;52,79262;FALSE;Van Giffen 1951;GIA
+100;D54a;Midden Drenthe;Drenthe;the Netherlands;TRUE;TRUE;FBW;megalith;6,47725;52,80824;FALSE;Meeüsen 1983;GIA
+101;D32d;Borger-Odoorn;Drenthe;the Netherlands;TRUE;TRUE;FBW;megalith;6,86159;52,84931;FALSE;Kamlag 1988;GIA
+102;D43a;Emmen;Drenthe;the Netherlands;TRUE;TRUE;FBW;megalith;6,88739;52,7921;FALSE;Molema 1987;GIA
+103;D54b + c;Midden Drenthe;Drenthe;the Netherlands;TRUE;TRUE;FBW;megalith;6,56612;52,92477;TRUE;Bouma 1985;GIA
+104;D32a;Borger-Odoorn;Drenthe;the Netherlands;TRUE;TRUE;FBW;megalith;6,83248;52,84886;FALSE;Taayke 1985;GIA
+105;Houtdorperveld;Apeldoorn;Gelderland;the Netherlands;TRUE;FALSE;CW;barrow;5,71596;52,24954;FALSE;"Bursch 1933; Van Sprang 1993, p, 45; Wentink 2020 (database)";PDG
+106;Elspeter bos;Elspeet;Gelderland;the Netherlands;TRUE;FALSE;CW;unknown;5,80956;52,29912;FALSE;"Van Sprang 1993, p, 38; cf, Modderman 1954";PDG
+107;Ermelose Heide - grafheuvel 3;Ermelo;Gelderland;the Netherlands;TRUE;FALSE;CW;barrow;5,67657;52,29503;FALSE;"Modderman 1954, pp, 24-5; 1962, p, 14; Van Sprang 1993, p, 48; Wentink 2020 (database)";PDG
+108;Putten;Putten;Gelderland;the Netherlands;TRUE;FALSE;CW;barrow;5,6187;52,27336;FALSE;"Van Giffen et al, 1971; Van Sprang 1993, p, 53";PDG
+109;Groevenbeekse Heide;Ermelo;Gelderland;the Netherlands;TRUE;FALSE;CW;flat grave;5,61219;52,28978;FALSE;Wentink 2020 (database);PDG
+110;Marum-De Haar Heuvel 2;Westerkwartier;Groningen;the Netherlands;TRUE;FALSE;CW;barrow;6,23121;53,12369;FALSE;"Wentink 2020 (database); Bursch 1936";RMO
+111;D43a/b;Emmen;Drenthe;the Netherlands;TRUE;TRUE;FBW;megalith;6,88739;52,7921;TRUE;Molema 1987;RMO
+112;D19;Borger-Odoorn;Drenthe;the Netherlands;TRUE;FALSE;FBW;megalith;6,785197;52,951969;FALSE;"Holwerda 1913; Van Giffen 1927";RMO
+113;D20;Borger-Odoorn;Drenthe;the Netherlands;TRUE;FALSE;FBW;megalith;6,785197;52,951969;FALSE;"Holwerda 1913; Van Giffen 1927";RMO
+114;Emmen-Heuvel XI;Emmen;Drenthe;the Netherlands;TRUE;FALSE;FBW;flat grave;6,917888;52,792434;TRUE;"Bursch 1936, p, 66; figs, 46,7-8";RMO
+115;De 'Zeven Bergjes';Hilversum;Noord-Holland;the Netherlands;TRUE;FALSE;CW;barrow;5,21315;52,23504;FALSE;Remouchamps 1928;RMO
+116;Oostereng - heuvel 22;Wageningen;Gelderland;the Netherlands;TRUE;FALSE;CW;barrow;5,711961;51,996604;TRUE;Bursch 1933;RMO
+117;Ede-Ginkelse Heide;Ede;Gelderland;the Netherlands;TRUE;FALSE;CW;unknown;5,73777;52,0254;FALSE;"Wentink 2020 (database); Modderman 1962, p, 19";RMO
+118;Hoenderloo-Schenkenshul;Apeldoorn;Gelderland;the Netherlands;TRUE;FALSE;CW;barrow;5,91586;52,12792;FALSE;"Bursch 1940; Lanting 2008, pp, 117-21; fig, 27";RMO
+119;Landgoed Quadenoord;Renkum;Gelderland;the Netherlands;TRUE;FALSE;CW;barrow;5,7366;51,99689;TRUE;"Wentink 2020 (database); Lanting and Van der Waals 1972; Modderman 1962, p, 19";RMO
+120;Dalfsen;Dalfsen;Overijssel;the Netherlands;TRUE;FALSE;FBW;flat grave cemetery;6,276319;52,515848;FALSE;"Bouma and Van der Velde 2022; Brindley 2022";PDO
+121;Angelslo;Emmen;Drenthe;the Netherlands;TRUE;FALSE;FBW;flat grave cemetery;6,918273;52,783254;TRUE;"Bakker and Van der Waals 1973; Van der Waals 1962; 1963; 1967";DMA
+122;Noordbarge-Hoge Loo;Emmen;Drenthe;the Netherlands;TRUE;FALSE;FBW;flat grave;6,894147;52,768349;TRUE;Van Giffen 1934;DMA
+123;n,o, van de Driesche Berg;Ermelo;Gelderland;the Netherlands;TRUE;FALSE;CW;barrow;5,69494;52,2806;TRUE;"Van Sprang 1993; Modderman 1962, p, 13";GIA
+124;Solse Berg;Barneveld;Gelderland;the Netherlands;TRUE;FALSE;CW;barrow;5,72904;52,23782;FALSE;"Bursch 1933; Van Sprang 1993, p, 46";GIA
+125;Ermelose heide- Grafheuvel 2;Ermelo;Gelderland;the Netherlands;TRUE;FALSE;CW;barrow;5,67745;52,29485;FALSE;"Modderman 1954, pp, 22-4; 1962, p, 14; Van Sprang 1993, p, 48";PDG
+127;Koerberg;Heerde;Gelderland;the Netherlands;TRUE;FALSE;CW;barrow;6,046978;52,407578;TRUE;Remouchamps 1928;RMO
+128;Fluitenberg;Renkum;Gelderland;the Netherlands;TRUE;FALSE;CW;barrow;5,73608;51,98335;FALSE;"Modderman 1962, p, 19; Wentink 2020 (database)";RMO
+129;Sportlaan;Ermelo;Ermelo;the Netherlands;TRUE;FALSE;CW;unknown;5,61807;52,29246;FALSE;Modderman 1962, p, 14;GIA
+130;Veluwe - unknown;-;Gelderland;the Netherlands;TRUE;FALSE;CW;unknown;;;FALSE;GIA inventaris;GIA
+131;Balloërveld;Aa en Hunze;Drenthe;the Netherlands;FALSE;TRUE;CW;unknown;6,66309;53,01312;TRUE;DMA inventaris;DMA

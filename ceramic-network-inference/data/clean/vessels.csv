@@ -1,0 +1,277 @@
+vessel_id,context_id,site_id,phase,vessel_type,petrographic_sample,site_name,region,site_type,longitude,latitude,approximate_position
+1,e. 1909/9.146(a),1,EFG,Amphora-like,1,Uddelermeer,Gelderland,flat grave cemetery,5.761342,52.245983,FALSE
+4,e. 1912/12.16,1,EFG,Bowl,0,Uddelermeer,Gelderland,flat grave cemetery,5.761342,52.245983,FALSE
+13,e. 1929/3.16,8,CW,Beaker,0,Uddelermeer-Vindplaats IV,Gelderland,barrow,5.75136,52.24557,TRUE
+14,e. 1911/9.6,9,CW,Beaker,0,Uddelermeer - heuvel E,Gelderland,barrow,5.76427,52.24805,FALSE
+15,e. 1933/6.8,10,CW,Beaker,0,Ermelose heide- tumulus XXVIII,Gelderland,barrow,5.68218,52.27956,FALSE
+16,e. 1908/1.17,11,CW,Beaker,0,Dobbe Gelle,Gelderland,barrow,5.88675,52.29332,FALSE
+18,e. 1929/1.13,12,CW,Beaker,0,Houtdorperveld-Heuvel I,Gelderland,barrow,5.713382,52.250867,TRUE
+19,e. 1909/9.148,1,EFG,Bowl,0,Uddelermeer,Gelderland,flat grave cemetery,5.761342,52.245983,FALSE
+20,e. 1909/9.152,1,EFG,Amphora-like,0,Uddelermeer,Gelderland,flat grave cemetery,5.761342,52.245983,FALSE
+22,e. 1909/9.154,1,EFG,Bowl,0,Uddelermeer,Gelderland,flat grave cemetery,5.761342,52.245983,FALSE
+25,e. 1909/9.150,1,EFG,Bowl,1,Uddelermeer,Gelderland,flat grave cemetery,5.761342,52.245983,FALSE
+26,e. 1911/9.16,1,EFG,Shouldered vessel,1,Uddelermeer,Gelderland,flat grave cemetery,5.761342,52.245983,FALSE
+27,e. 1909/9.155,1,EFG,Amphora-like,0,Uddelermeer,Gelderland,flat grave cemetery,5.761342,52.245983,FALSE
+28,e. 1909/9.153,1,EFG,Beaker,0,Uddelermeer,Gelderland,flat grave cemetery,5.761342,52.245983,FALSE
+31,e. 1929/11.9,17,CW,Beaker,0,Oostereng - heuvel heuvel 4,Ede,barrow,5.711961,51.996604,TRUE
+32,1-1-4,18,EFG,Bowl,0,O2,Overijssel,megalith/flat grave cemetery,6.841292,52.456792,FALSE
+33,1-1-8,18,EFG,Amphora-like,1,O2,Overijssel,megalith/flat grave cemetery,6.841292,52.456792,FALSE
+34,1-1-20,18,EFG,Collared flask,0,O2,Overijssel,megalith/flat grave cemetery,6.841292,52.456792,FALSE
+38,1-1-5,18,EFG,Bowl,0,O2,Overijssel,megalith/flat grave cemetery,6.841292,52.456792,FALSE
+40,1-1-41,18,EFG,Bowl,0,O2,Overijssel,megalith/flat grave cemetery,6.841292,52.456792,FALSE
+42,1-1-38,18,EFG,Bowl,0,O2,Overijssel,megalith/flat grave cemetery,6.841292,52.456792,FALSE
+43,1-1-37,18,EFG,Bowl,0,O2,Overijssel,megalith/flat grave cemetery,6.841292,52.456792,FALSE
+44,1-1-6,18,EFG,Bowl,0,O2,Overijssel,megalith/flat grave cemetery,6.841292,52.456792,FALSE
+45,1-1-34,18,EFG,Bowl,0,O2,Overijssel,megalith/flat grave cemetery,6.841292,52.456792,FALSE
+50,1934/VIII.427,19,CW,Beaker,0,Leuvenumse beek,Gelderland,unknown,5.60704,52.28529,FALSE
+52,1934/VIII.428,19,CW,Beaker,0,Leuvenumse beek,Gelderland,unknown,5.60704,52.28529,FALSE
+53,1934/VIII.430,123,CW,Beaker,0,"n,o, van de Driesche Berg",Gelderland,barrow,5.69494,52.2806,TRUE
+54,1935/XII.4,130,CW,Beaker,0,Veluwe - unknown,Gelderland,unknown,,,FALSE
+55,1934/VIII.425,123,CW,Beaker,0,"n,o, van de Driesche Berg",Gelderland,barrow,5.69494,52.2806,TRUE
+56,1934/VIII.489,124,CW,Beaker,0,Solse Berg,Gelderland,barrow,5.72904,52.23782,FALSE
+57,1934/VIII.426,129,CW,Beaker,0,Sportlaan,Ermelo,unknown,5.61807,52.29246,FALSE
+60,1974/I.3,23,CW,Bowl,1,Annen-Holtkampen,Drenthe,flat grave,6.714929,53.059538,FALSE
+66,1984,28,CW,Beaker,1,Borger-Drouwenerweg,Drenthe,barrow,6.78919,52.931016,TRUE
+67,Graf V,29,CW,Beaker,0,Noordbarge,Drenthe,flat grave cemetery,6.895742,52.77204,FALSE
+68,Graf III,30,CW,Beaker,0,Hijkerveld,Drenthe,flat grave cemetery,6.489966,53.147651,FALSE
+69,Graf II,30,CW,Beaker,0,Hijkerveld,Drenthe,flat grave cemetery,6.489966,53.147651,FALSE
+70,Graf IV,29,CW,Beaker,0,Noordbarge,Drenthe,flat grave cemetery,6.895742,52.77204,FALSE
+75,Graf V,30,CW,Beaker,0,Hijkerveld,Drenthe,flat grave cemetery,6.489966,53.147651,FALSE
+76,1937/V.2,38,CW,Beaker,0,Weg Gasteren-Anloo,Drenthe,barrow,6.683965,53.038355,TRUE
+78,Graf VII,30,CW,Beaker,1,Hijkerveld,Drenthe,flat grave cemetery,6.489966,53.147651,FALSE
+79,Graf VII no 3,39,CW,Bowl,0,,,,,,
+80,1972/101,34,CW,Beaker,0,Havelte-Koningskamp,Drenthe,flat grave cemetery,6.240919,52.775199,TRUE
+82,1966/XI,40,CW,Beaker,1,Eeserveld - grafheuvels,Overijssel,barrow,6.106837,52.826374,TRUE
+83,1918/VII.106,35,CW,Beaker,0,De Eese - Tumulus V,Overijssel,barrow,6.123282,52.851068,TRUE
+84,1974-894,29,CW,Beaker,0,Noordbarge,Drenthe,flat grave cemetery,6.895742,52.77204,FALSE
+85,1974-894,29,CW,Beaker,0,Noordbarge,Drenthe,flat grave cemetery,6.895742,52.77204,FALSE
+86,1918/VII.101,35,CW,Beaker,1,De Eese - Tumulus V,Overijssel,barrow,6.123282,52.851068,TRUE
+87,1972/3,30,CW,Bowl,0,Hijkerveld,Drenthe,flat grave cemetery,6.489966,53.147651,FALSE
+92,Megalith,18,MI,Bowl,0,O2,Overijssel,megalith/flat grave cemetery,6.841292,52.456792,FALSE
+100,1928/III.115,44,MI,Bowl,1,D6a,Drenthe,megalith,6.63343,53.07363,FALSE
+103,1928/III.115,44,MI,Amphora-like,1,D6a,Drenthe,megalith,6.63343,53.07363,FALSE
+104,1928/III.116,44,MI,Bowl,1,D6a,Drenthe,megalith,6.63343,53.07363,FALSE
+105,1928/III.100,44,LFG,Bowl,1,D6a,Drenthe,megalith,6.63343,53.07363,FALSE
+106,1928/III.104,44,LFG,Bowl,0,D6a,Drenthe,megalith,6.63343,53.07363,FALSE
+107,1928/III.70,44,MI,Bowl,0,D6a,Drenthe,megalith,6.63343,53.07363,FALSE
+109,1952/IV.13,45,MI,Amphora-like,1,D9,Drenthe,megalith,6.715381,53.061444,FALSE
+111,1952/IV.13,45,MI,Bowl,0,D9,Drenthe,megalith,6.715381,53.061444,FALSE
+112,1952/IV.13,45,MI,Amphora-like,1,D9,Drenthe,megalith,6.715381,53.061444,FALSE
+113,1952/IV.13,45,MI,Beaker,0,D9,Drenthe,megalith,6.715381,53.061444,FALSE
+114,1952/IV.13,45,MI,Beaker,1,D9,Drenthe,megalith,6.715381,53.061444,FALSE
+116,1985/XII.7b,46,CW,Beaker,0,Bronnegerstraat-Nabij D27,Drenthe,barrow,6.798982,52.931243,TRUE
+117,1956/X.7a,47,CW,Beaker,0,Landgoed de Eese - Heuvel I4,Drenthe,barrow,6.134677,52.84671,TRUE
+118,1985/XII.7a,46,CW,Beaker,0,Bronnegerstraat-Nabij D27,Drenthe,barrow,6.798982,52.931243,TRUE
+119,1939/XII.30,48,CW,Beaker,0,Drouwen-kringgrepurnenveld,Drenthe,unknown,6.796389,52.952222,TRUE
+120,1937/XI.5,49,CW,Beaker,0,"Rolde, bij tumuliveld en spoor",Drenthe,unknown,6.641758,52.989813,TRUE
+126,1935/XI.10,51,CW,Beaker,0,Sleen-Kruidhaarsveld,Drenthe,flat grave cemetery,6.783534,52.770753,TRUE
+129,1970/X.8,30,CW,Beaker,0,Hijkerveld,Drenthe,flat grave cemetery,6.489966,53.147651,FALSE
+130,1934/IV.2,54,CW,Beaker,0,Weerdinge-steenkransheuvel,Drenthe,barrow,6.906501,52.812247,TRUE
+131,ANLOO,55,CW,Beaker,0,Anloo-Evertsbos graf D,Drenthe,flat grave cemetery,6.71701,53.03544,FALSE
+132,1935/X.2,56,CW,Beaker,0,Sleen-Kruidhaarsveld,Drenthe,flat grave cemetery,6.783534,52.770753,TRUE
+133,1952/XII.1,57,CW,Beaker,0,Anloo tumulus II,Drenthe,barrow,6.70094,53.05601,FALSE
+134,1955/XII.2,58,CW,Beaker,0,"Tumulus c, Eext-Schaapdijksweg",Drenthe,barrow,6.741483,53.036115,TRUE
+135,1927/XI.8,59,CW,Beaker,0,"NW v, D11",Drenthe,barrow,6.707928,53.0302,TRUE
+136,1925/XI.8,60,CW,Beaker,0,"Tumulus III, Noordsche veld, Zeijen, Vries",Drenthe,barrow,6.527821,53.064282,TRUE
+137,1934/I.8,61,CW,Beaker,0,Jodenbergje,Drenthe,barrow,6.52612,53.05583,FALSE
+140,"Anloo, burgermeester",63,CW,Beaker,0,"Anloo, burgermeester",Drenthe,unknown,6.699444,53.043333,TRUE
+142,1925/IX.9,60,CW,Bowl,0,"Tumulus III, Noordsche veld, Zeijen, Vries",Drenthe,barrow,6.527821,53.064282,TRUE
+143,1952/IV.13,45,MI,Beaker,0,D9,Drenthe,megalith,6.715381,53.061444,FALSE
+144,1952/IV.13,45,MI,Beaker,1,D9,Drenthe,megalith,6.715381,53.061444,FALSE
+145,1962/V.1a,65,CW,Beaker,0,"Taarlose weg, Vries",Drenthe,flat grave,6.584137,53.062725,TRUE
+146,1920/IV.3,66,CW,Beaker,0,Unknown location,Drenthe,unknown,,,FALSE
+147,1933/III.35,67,CW,Beaker,0,"Balloo, Rolde",Drenthe,barrow,6.630696,52.996904,FALSE
+148,1939/XII.2,48,CW,Beaker,0,Drouwen-kringgrepurnenveld,Drenthe,unknown,6.796389,52.952222,TRUE
+149,1936/II.2,68,CW,Bowl,0,Zuidlaren,Drenthe,unknown,6.659973,53.093276,TRUE
+150,1952/XI.2,69,CW,Beaker,0,"Kamp De Vledders, Westervelde",Drenthe,flat grave,6.450274,53.037846,FALSE
+151,1952/IV.13,45,MI,Bowl,0,D9,Drenthe,megalith,6.715381,53.061444,FALSE
+152,1880/II.2,52,CW,Beaker,0,"Halerzand, Beilen",Drenthe,unknown,6.54077,52.920328,TRUE
+154,1895/II.4,70,CW,Beaker,0,Molen te Beilen,Drenthe,flat grave,6.511111,52.856667,TRUE
+155,1937/VI.118,71,CW,Beaker,0,Eext-Vijzelkampen,Drenthe,unknown,6.76125,53.01993,FALSE
+156,1935/X.7,72,CW,Beaker,0,Esch te Peelo,Drenthe,unknown,6.571227,53.020435,FALSE
+157,1895/II.3,70,CW,Amphora-like,0,Molen te Beilen,Drenthe,flat grave,6.511111,52.856667,TRUE
+159,1935/X.8,72,CW,Beaker,0,Esch te Peelo,Drenthe,unknown,6.571227,53.020435,FALSE
+160,1880/VII.5,74,CW,Beaker,0,"Hooghalen, Halerzand",Drenthe,unknown,6.554419,52.929133,TRUE
+161,1940/VII.2,75,CW,Beaker,0,"Heuvel III, Vredenheim, Rolde",Drenthe,barrow,6.655687,52.949016,TRUE
+162,1923/I.1,76,CW,Beaker,0,"Tumulus b, Eext-Schaapdijksweg",Drenthe,barrow,6.741483,53.036115,TRUE
+163,1934/I.10,61,CW,Beaker,0,Jodenbergje,Drenthe,barrow,6.52612,53.05583,FALSE
+164,1970/XII.28,77,CW,Beaker,1,Eext-tumulus Galgenwandveen III,Drenthe,barrow,6.72919,53.02892,FALSE
+165,1936/I.65a,62,CW,Beaker,0,Rhee,Drenthe,flat grave cemetery,6.559918,53.037405,TRUE
+166,1941/IX.35,78,CW,Beaker,0,"Tumulus II, Anloo",Drenthe,barrow,6.70821,53.04973,FALSE
+168,1962/II.266,79,CW,Beaker,1,Emmen-onbekend,Drenthe,unknown,6.883333,52.783333,TRUE
+169,1962/II.266a,79,CW,Amphora-like,1,Emmen-onbekend,Drenthe,unknown,6.883333,52.783333,TRUE
+175,1957/VII.4a,83,CW,Beaker,1,Hees-Ruinen,Drenthe,flat grave,6.368728,52.74922,TRUE
+176,1937/V.2,84,CW,Beaker,0,"Gasteren, tumulus",Drenthe,barrow,6.6783,53.03703,FALSE
+188,1918/IX.39a,86,MI,Jug,1,D30,Drenthe,megalith,6.845683,52.891517,FALSE
+189,1918/IX.42b,86,MI,Amphora-like,1,D30,Drenthe,megalith,6.845683,52.891517,FALSE
+190,1918/IX.40c,86,MI,Beaker,1,D30,Drenthe,megalith,6.845683,52.891517,FALSE
+191,1918/IX.36,86,MI,Beaker,1,D30,Drenthe,megalith,6.845683,52.891517,FALSE
+192,1-1-15,18,EFG,Amphora-like,0,O2,Overijssel,megalith/flat grave cemetery,6.841292,52.456792,FALSE
+193,1-1-19,18,EFG,Shouldered vessel,0,O2,Overijssel,megalith/flat grave cemetery,6.841292,52.456792,FALSE
+194,1-1-11,18,EFG,Amphora-like,0,O2,Overijssel,megalith/flat grave cemetery,6.841292,52.456792,FALSE
+195,1-1-12,18,EFG,Amphora-like,0,O2,Overijssel,megalith/flat grave cemetery,6.841292,52.456792,FALSE
+196,1-1-10,18,EFG,Bowl,0,O2,Overijssel,megalith/flat grave cemetery,6.841292,52.456792,FALSE
+197,1-1-16,18,EFG,Bowl,0,O2,Overijssel,megalith/flat grave cemetery,6.841292,52.456792,FALSE
+198,1-1-17,18,EFG,Amphora-like,0,O2,Overijssel,megalith/flat grave cemetery,6.841292,52.456792,FALSE
+199,POM 184,95,EFG,Bowl,0,Baalderesch,Overijssel,flat grave cemetery,6.63843,52.58798,TRUE
+200,POM 188,95,EFG,Bowl,0,Baalderesch,Overijssel,flat grave cemetery,6.63843,52.58798,TRUE
+201,POM 189,95,EFG,Bowl,0,Baalderesch,Overijssel,flat grave cemetery,6.63843,52.58798,TRUE
+202,OKT 148,95,EFG,Beaker,0,Baalderesch,Overijssel,flat grave cemetery,6.63843,52.58798,TRUE
+203,OKT 147,95,EFG,Beaker,1,Baalderesch,Overijssel,flat grave cemetery,6.63843,52.58798,TRUE
+204,POM 185,95,EFG,Bowl,0,Baalderesch,Overijssel,flat grave cemetery,6.63843,52.58798,TRUE
+205,POM 182,95,EFG,Bowl,0,Baalderesch,Overijssel,flat grave cemetery,6.63843,52.58798,TRUE
+206,POM 180,95,EFG,Shouldered vessel,0,Baalderesch,Overijssel,flat grave cemetery,6.63843,52.58798,TRUE
+207,POM 183,95,EFG,Bowl,0,Baalderesch,Overijssel,flat grave cemetery,6.63843,52.58798,TRUE
+208,1991-4,96,EFG,Beaker,0,Denenkamp-Klokkenberg,Overijssel,flat grave cemetery,7.008889,52.379444,TRUE
+209,POM 165,95,EFG,Bowl,0,Baalderesch,Overijssel,flat grave cemetery,6.63843,52.58798,TRUE
+210,POM 175,95,EFG,Beaker,1,Baalderesch,Overijssel,flat grave cemetery,6.63843,52.58798,TRUE
+211,POM 173,95,EFG,Beaker,0,Baalderesch,Overijssel,flat grave cemetery,6.63843,52.58798,TRUE
+213,POM 168,95,EFG,Collared flask,0,Baalderesch,Overijssel,flat grave cemetery,6.63843,52.58798,TRUE
+214,POM 179,95,EFG,Shouldered vessel,0,Baalderesch,Overijssel,flat grave cemetery,6.63843,52.58798,TRUE
+215,POM 177,95,EFG,Beaker,0,Baalderesch,Overijssel,flat grave cemetery,6.63843,52.58798,TRUE
+217,1935/VII.2,51,EFG,Beaker,0,Sleen-Kruidhaarsveld,Drenthe,flat grave cemetery,6.783534,52.770753,TRUE
+218,1935/VII.5,51,EFG,Beaker,0,Sleen-Kruidhaarsveld,Drenthe,flat grave cemetery,6.783534,52.770753,TRUE
+219,1935/VII.7,51,EFG,Beaker,0,Sleen-Kruidhaarsveld,Drenthe,flat grave cemetery,6.783534,52.770753,TRUE
+220,1935/VII.3,51,EFG,Amphora-like,0,Sleen-Kruidhaarsveld,Drenthe,flat grave cemetery,6.783534,52.770753,TRUE
+221,1935/VII.6,51,EFG,Amphora-like,0,Sleen-Kruidhaarsveld,Drenthe,flat grave cemetery,6.783534,52.770753,TRUE
+222,1935/VII.4,51,EFG,Amphora-like,0,Sleen-Kruidhaarsveld,Drenthe,flat grave cemetery,6.783534,52.770753,TRUE
+223,1935/VII.1,51,EFG,Bowl,0,Sleen-Kruidhaarsveld,Drenthe,flat grave cemetery,6.783534,52.770753,TRUE
+224,1935/III.11,97,EFG,Bowl,0,Ekelenberg - Zuidwolde,Drenthe,flat grave cemetery,6.43297,52.66196,TRUE
+225,1935/III.12,97,EFG,Amphora-like,1,Ekelenberg - Zuidwolde,Drenthe,flat grave cemetery,6.43297,52.66196,TRUE
+226,1934/III.3b,97,EFG,Bowl,0,Ekelenberg - Zuidwolde,Drenthe,flat grave cemetery,6.43297,52.66196,TRUE
+228,1935/III.18,97,EFG,Misc,1,Ekelenberg - Zuidwolde,Drenthe,flat grave cemetery,6.43297,52.66196,TRUE
+230,1935/III.18b,97,EFG,Shouldered vessel,0,Ekelenberg - Zuidwolde,Drenthe,flat grave cemetery,6.43297,52.66196,TRUE
+231,1935/III.17,97,EFG,Beaker,0,Ekelenberg - Zuidwolde,Drenthe,flat grave cemetery,6.43297,52.66196,TRUE
+232,1935/III.18a,97,EFG,Amphora-like,0,Ekelenberg - Zuidwolde,Drenthe,flat grave cemetery,6.43297,52.66196,TRUE
+233,1935/III.16,97,EFG,Amphora-like,0,Ekelenberg - Zuidwolde,Drenthe,flat grave cemetery,6.43297,52.66196,TRUE
+234,1935/III.15,97,EFG,Amphora-like,0,Ekelenberg - Zuidwolde,Drenthe,flat grave cemetery,6.43297,52.66196,TRUE
+235,1935/III.9,97,EFG,Amphora-like,0,Ekelenberg - Zuidwolde,Drenthe,flat grave cemetery,6.43297,52.66196,TRUE
+236,1935/III.10,97,EFG,Shouldered vessel,0,Ekelenberg - Zuidwolde,Drenthe,flat grave cemetery,6.43297,52.66196,TRUE
+237,1935/III.13,97,EFG,Bowl,0,Ekelenberg - Zuidwolde,Drenthe,flat grave cemetery,6.43297,52.66196,TRUE
+238,1918/II,98,MI,Amphora-like,1,D21 - Bronneger,Drenthe,megalith,6.800111,52.944128,FALSE
+239,1918/X.48,98,MI,Beaker,0,D21 - Bronneger,Drenthe,megalith,6.800111,52.944128,FALSE
+240,1918/X.40**,98,MI,Jug,0,D21 - Bronneger,Drenthe,megalith,6.800111,52.944128,FALSE
+241,1918/X.1,98,MI,Bucket shape,0,D21 - Bronneger,Drenthe,megalith,6.800111,52.944128,FALSE
+242,1918/X.31,98,MI,Amphora-like,0,D21 - Bronneger,Drenthe,megalith,6.800111,52.944128,FALSE
+244,1918/X.3b,98,MI,Bowl,0,D21 - Bronneger,Drenthe,megalith,6.800111,52.944128,FALSE
+245,1918/XI.12*,98,MI,Bowl,0,D21 - Bronneger,Drenthe,megalith,6.800111,52.944128,FALSE
+246,1918/X.29**,98,MI,Bowl,0,D21 - Bronneger,Drenthe,megalith,6.800111,52.944128,FALSE
+247,1918/X.79*,98,MI,Beaker,0,D21 - Bronneger,Drenthe,megalith,6.800111,52.944128,FALSE
+249,1918/X.12**,98,MI,Bowl,0,D21 - Bronneger,Drenthe,megalith,6.800111,52.944128,FALSE
+250,1918/X.30*,98,MI,Bowl,0,D21 - Bronneger,Drenthe,megalith,6.800111,52.944128,FALSE
+251,1918/VIII.232,99,LFG,Bowl,0,D53,Drenthe,megalith,6.2183,52.79262,FALSE
+252,1918/X.74,98,MI,Beaker,0,D21 - Bronneger,Drenthe,megalith,6.800111,52.944128,FALSE
+253,1918/X.21,99,MI,Bowl,0,D53,Drenthe,megalith,6.2183,52.79262,FALSE
+254,1981/VIII.5,99,MI,Amphora-like,0,D53,Drenthe,megalith,6.2183,52.79262,FALSE
+255,1918/VIII.6,99,LFG,Bowl,0,D53,Drenthe,megalith,6.2183,52.79262,FALSE
+258,1949/IX.8,100,LFG,Bowl,0,D54a,Drenthe,megalith,6.47725,52.80824,FALSE
+259,1949/9,100,MI,Beaker,0,D54a,Drenthe,megalith,6.47725,52.80824,FALSE
+260,1949/IX.9,100,MI,Bowl,0,D54a,Drenthe,megalith,6.47725,52.80824,FALSE
+261,1949/IX.9,100,MI,Bowl,0,D54a,Drenthe,megalith,6.47725,52.80824,FALSE
+262,1949/IX.7,100,LFG,Bowl,0,D54a,Drenthe,megalith,6.47725,52.80824,FALSE
+263,1949/IX.8,100,LFG,Bowl,1,D54a,Drenthe,megalith,6.47725,52.80824,FALSE
+264,1918/X.66,98,MI,Jug,0,D21 - Bronneger,Drenthe,megalith,6.800111,52.944128,FALSE
+265,1918/X.56,98,MI,Bowl,0,D21 - Bronneger,Drenthe,megalith,6.800111,52.944128,FALSE
+266,1918/X.54,98,MI,Beaker,0,D21 - Bronneger,Drenthe,megalith,6.800111,52.944128,FALSE
+267,1918/X.75*,98,MI,Bowl,0,D21 - Bronneger,Drenthe,megalith,6.800111,52.944128,FALSE
+268,1918/X.66*,98,MI,Bucket shape,1,D21 - Bronneger,Drenthe,megalith,6.800111,52.944128,FALSE
+269,1984/III vnr 2,101,MI,Collared flask,1,D32d,Drenthe,megalith,6.86159,52.84931,FALSE
+270,1984/III vnr 1,101,MI,Misc,0,D32d,Drenthe,megalith,6.86159,52.84931,FALSE
+271,1984/III vnr 14,101,MI,Amphora-like,1,D32d,Drenthe,megalith,6.86159,52.84931,FALSE
+272,1984/III vnr 72,101,MI,Bowl,0,D32d,Drenthe,megalith,6.86159,52.84931,FALSE
+273,1984/III vnr 48,101,MI,Beaker,0,D32d,Drenthe,megalith,6.86159,52.84931,FALSE
+274,1984/III vnr 51,101,MI,Beaker,1,D32d,Drenthe,megalith,6.86159,52.84931,FALSE
+275,1984/III vnr 51,101,MI,Beaker,0,D32d,Drenthe,megalith,6.86159,52.84931,FALSE
+276,1984/III vnr 47,101,MI,Beaker,1,D32d,Drenthe,megalith,6.86159,52.84931,FALSE
+277,1985/XI vnr 11,102,MI,Bowl,0,D43a,Drenthe,megalith,6.88739,52.7921,FALSE
+278,1985/XI vnr 12,102,MI,Bowl,0,D43a,Drenthe,megalith,6.88739,52.7921,FALSE
+279,1985/XI vnr 14,102,MI,Bowl,0,D43a,Drenthe,megalith,6.88739,52.7921,FALSE
+280,1985/XI vnr 42,102,MI,Beaker,1,D43a,Drenthe,megalith,6.88739,52.7921,FALSE
+281,1985/XI vnr 39,102,MI,Beaker,1,D43a,Drenthe,megalith,6.88739,52.7921,FALSE
+282,1985/XI vnr 70,102,MI,Bowl,1,D43a,Drenthe,megalith,6.88739,52.7921,FALSE
+283,1947/VII.2/AB119,103,MI,Amphora-like,0,D54b + c,Drenthe,megalith,6.56612,52.92477,TRUE
+284,1947/VII.18/AB204,103,MI,Beaker,1,D54b + c,Drenthe,megalith,6.56612,52.92477,TRUE
+285,1947/VII.18/AB190,103,MI,Beaker,0,D54b + c,Drenthe,megalith,6.56612,52.92477,TRUE
+286,1947/VII.19/AB199,103,MI,Beaker,0,D54b + c,Drenthe,megalith,6.56612,52.92477,TRUE
+287,1947/VII.19/AB200,103,MI,Beaker,0,D54b + c,Drenthe,megalith,6.56612,52.92477,TRUE
+288,1947/VII.20/AB198,103,MI,Beaker,1,D54b + c,Drenthe,megalith,6.56612,52.92477,TRUE
+289,1947/VII.19b/AB197,103,MI,Beaker,0,D54b + c,Drenthe,megalith,6.56612,52.92477,TRUE
+290,1947/VII.18/AB165,103,LFG,Bowl,0,D54b + c,Drenthe,megalith,6.56612,52.92477,TRUE
+291,1947/VII.4,103,MI,Beaker,1,D54b + c,Drenthe,megalith,6.56612,52.92477,TRUE
+292,1947/VII.2/AB5,103,MI,Bowl,1,D54b + c,Drenthe,megalith,6.56612,52.92477,TRUE
+293,1947/VII.18/AB61,103,MI,Bowl,1,D54b + c,Drenthe,megalith,6.56612,52.92477,TRUE
+294,1947/VII.19/AB33,103,LFG,Bowl,1,D54b + c,Drenthe,megalith,6.56612,52.92477,TRUE
+295,1947/VII.19/AB21,103,MI,Bowl,0,D54b + c,Drenthe,megalith,6.56612,52.92477,TRUE
+296,Taayke - IL,104,MI,Bowl,1,D32a,Drenthe,megalith,6.83248,52.84886,FALSE
+297,Taayke - CVIII,104,MI,Beaker,0,D32a,Drenthe,megalith,6.83248,52.84886,FALSE
+300,1984/III vnr 9,101,MI,Bowl,1,D32d,Drenthe,megalith,6.86159,52.84931,FALSE
+301,1984/III vnr 60,101,MI,Beaker,1,D32d,Drenthe,megalith,6.86159,52.84931,FALSE
+302,1984/III vnr 49,101,MI,Beaker,0,D32d,Drenthe,megalith,6.86159,52.84931,FALSE
+303,1985/XI vnr 50,102,MI,Beaker,1,D43a,Drenthe,megalith,6.88739,52.7921,FALSE
+304,1978/XI.7,100,MI,Bowl,1,D54a,Drenthe,megalith,6.47725,52.80824,FALSE
+305,1949/IX.10,100,MI,Beaker,1,D54a,Drenthe,megalith,6.47725,52.80824,FALSE
+306,GAS 1976-4-394a,105,CW,Beaker,0,Houtdorperveld,Gelderland,barrow,5.71596,52.24954,FALSE
+307,GAS 1958-9-86,106,CW,Beaker,0,Elspeter bos,Gelderland,unknown,5.80956,52.29912,FALSE
+308,GAS 234 1/3,107,CW,Beaker,0,Ermelose Heide - grafheuvel 3,Gelderland,barrow,5.67657,52.29503,FALSE
+309,GAS 1973-4-9,108,CW,Beaker,0,Putten,Gelderland,barrow,5.6187,52.27336,FALSE
+310,GAS 230 1/3,107,CW,Beaker,0,Ermelose Heide - grafheuvel 3,Gelderland,barrow,5.67657,52.29503,FALSE
+311,GAS 32,14,EFG,Amphora-like,0,Ugchelen,Gelderland,flat grave cemetery,5.93107,52.17774,FALSE
+312,GAS 234.2/3,107,CW,Beaker,0,Ermelose Heide - grafheuvel 3,Gelderland,barrow,5.67657,52.29503,FALSE
+313,GAS 1971-11-1,109,CW,Beaker,0,Groevenbeekse Heide,Gelderland,flat grave,5.61219,52.28978,FALSE
+314,b. 1932/12.7,110,CW,Beaker,0,Marum-De Haar Heuvel 2,Groningen,barrow,6.23121,53.12369,FALSE
+315,c. 1913/12.10,111,MI,Beaker,0,D43a/b,Drenthe,megalith,6.88739,52.7921,TRUE
+316,c. 1912/12.209,112,MI,Bowl,0,D19,Drenthe,megalith,6.785197,52.951969,FALSE
+317,c. 1912/12.184d,112,MI,Shouldered vessel,0,D19,Drenthe,megalith,6.785197,52.951969,FALSE
+318,c. 1912/12.184c,112,MI,Beaker,0,D19,Drenthe,megalith,6.785197,52.951969,FALSE
+319,c. 1912/12.98,112,MI,Bucket shape,0,D19,Drenthe,megalith,6.785197,52.951969,FALSE
+320,c. 1912/12.178 & a,112,MI,Beaker,0,D19,Drenthe,megalith,6.785197,52.951969,FALSE
+321,c. 1912/12.75,112,MI,Bowl,0,D19,Drenthe,megalith,6.785197,52.951969,FALSE
+322,c. 1912/12.210,112,MI,Bowl,0,D19,Drenthe,megalith,6.785197,52.951969,FALSE
+323,c. 1912/12.212,112,MI,Biberon,0,D19,Drenthe,megalith,6.785197,52.951969,FALSE
+324,c. 1912/12.251,113,MI,Bowl,0,D20,Drenthe,megalith,6.785197,52.951969,FALSE
+325,c. 1936/5.11,114,EFG,Beaker,0,Emmen-Heuvel XI,Drenthe,flat grave,6.917888,52.792434,TRUE
+326,g. 1928/2.11,127,CW,Beaker,0,Koerberg,Gelderland,barrow,6.046978,52.407578,TRUE
+327,e. 1930/9.1,116,CW,Beaker,0,Oostereng - heuvel 22,Gelderland,barrow,5.711961,51.996604,TRUE
+328,e. 1936/1.76,117,CW,Beaker,0,Ede-Ginkelse Heide,Gelderland,unknown,5.73777,52.0254,FALSE
+329,e. 1939/8.2,118,CW,Beaker,0,Hoenderloo-Schenkenshul,Gelderland,barrow,5.91586,52.12792,FALSE
+330,e. 1936/1.64,128,CW,Beaker,0,Fluitenberg,Gelderland,barrow,5.73608,51.98335,FALSE
+331,e. 1936/1.75,117,CW,Beaker,0,Ede-Ginkelse Heide,Gelderland,unknown,5.73777,52.0254,FALSE
+332,e. 1936/1.57,119,CW,Beaker,0,Landgoed Quadenoord,Gelderland,barrow,5.7366,51.99689,TRUE
+333,e. 1936/1.47,119,CW,Beaker,0,Landgoed Quadenoord,Gelderland,barrow,5.7366,51.99689,TRUE
+334,e. 1936/1.56,119,CW,Beaker,0,Landgoed Quadenoord,Gelderland,barrow,5.7366,51.99689,TRUE
+335,e. 1936/1.45,119,CW,Beaker,0,Landgoed Quadenoord,Gelderland,barrow,5.7366,51.99689,TRUE
+337,g. 1928/2.7,115,CW,Beaker,0,De 'Zeven Bergjes',Noord-Holland,barrow,5.21315,52.23504,FALSE
+338,c. 1913/12.16 / BA 3,111,MI,Bowl,1,D43a/b,Drenthe,megalith,6.88739,52.7921,TRUE
+339,c. 1913/12.16/ BA26,111,MI,Bowl,0,D43a/b,Drenthe,megalith,6.88739,52.7921,TRUE
+340,c. (unreadable)/ BA 120,111,MI,Bowl,1,D43a/b,Drenthe,megalith,6.88739,52.7921,TRUE
+341,c. 1913/12.9 SP 29,111,MI,Bowl,0,D43a/b,Drenthe,megalith,6.88739,52.7921,TRUE
+342,c. 1913/12.22 SP601,111,MI,Bowl,0,D43a/b,Drenthe,megalith,6.88739,52.7921,TRUE
+343,c. 1913.12.22 BA60,111,MI,Bowl,0,D43a/b,Drenthe,megalith,6.88739,52.7921,TRUE
+344,c. 1912/12.9,112,MI,Bowl,0,D19,Drenthe,megalith,6.785197,52.951969,FALSE
+345,c. 1912/unreadable,112,MI,Bowl,0,D19,Drenthe,megalith,6.785197,52.951969,FALSE
+346,c. 1912/12.128,112,MI,Amphora-like,0,D19,Drenthe,megalith,6.785197,52.951969,FALSE
+347,c. 1913/12.17 TR 27,111,MI,Beaker,0,D43a/b,Drenthe,megalith,6.88739,52.7921,TRUE
+348,c. 1913/12.17 SP96,111,MI,Beaker,0,D43a/b,Drenthe,megalith,6.88739,52.7921,TRUE
+349,c. 1913/12.17 TR 5,111,MI,Beaker,1,D43a/b,Drenthe,megalith,6.88739,52.7921,TRUE
+350,1949/IX.10,100,MI,Bowl,1,D54a,Drenthe,megalith,6.47725,52.80824,FALSE
+351,Burial 19,120,LFG,Bowl,0,Dalfsen,Overijssel,flat grave cemetery,6.276319,52.515848,FALSE
+353,Burial 23,120,LFG,Amphora-like,0,Dalfsen,Overijssel,flat grave cemetery,6.276319,52.515848,FALSE
+354,Burial 23,120,LFG,Bowl,0,Dalfsen,Overijssel,flat grave cemetery,6.276319,52.515848,FALSE
+355,Burial 26,120,LFG,Bowl,0,Dalfsen,Overijssel,flat grave cemetery,6.276319,52.515848,FALSE
+357,Burial 29,120,LFG,Bowl,0,Dalfsen,Overijssel,flat grave cemetery,6.276319,52.515848,FALSE
+358,Burial 29,120,LFG,Bowl,0,Dalfsen,Overijssel,flat grave cemetery,6.276319,52.515848,FALSE
+359,Burial 30,120,LFG,Amphora-like,0,Dalfsen,Overijssel,flat grave cemetery,6.276319,52.515848,FALSE
+361,Burial 49,120,LFG,Bowl,0,Dalfsen,Overijssel,flat grave cemetery,6.276319,52.515848,FALSE
+363,Burial 100,120,LFG,Bowl,0,Dalfsen,Overijssel,flat grave cemetery,6.276319,52.515848,FALSE
+364,Burial 106,120,LFG,Bowl,0,Dalfsen,Overijssel,flat grave cemetery,6.276319,52.515848,FALSE
+365,Burial 110,120,LFG,Bowl,0,Dalfsen,Overijssel,flat grave cemetery,6.276319,52.515848,FALSE
+367,Burial 111,120,LFG,Bowl,0,Dalfsen,Overijssel,flat grave cemetery,6.276319,52.515848,FALSE
+368,Burial 111,120,LFG,Bowl,0,Dalfsen,Overijssel,flat grave cemetery,6.276319,52.515848,FALSE
+369,Burial 113,120,LFG,Bowl,0,Dalfsen,Overijssel,flat grave cemetery,6.276319,52.515848,FALSE
+370,Graf 5,121,LFG,Bowl,0,Angelslo,Drenthe,flat grave cemetery,6.918273,52.783254,TRUE
+371,Graf 5,121,LFG,Bowl,0,Angelslo,Drenthe,flat grave cemetery,6.918273,52.783254,TRUE
+372,Graf 3,121,LFG,Bowl,0,Angelslo,Drenthe,flat grave cemetery,6.918273,52.783254,TRUE
+373,Graf 3,121,LFG,Bowl,0,Angelslo,Drenthe,flat grave cemetery,6.918273,52.783254,TRUE
+374,1920/VIII.20,122,LFG,Bowl,0,Noordbarge-Hoge Loo,Drenthe,flat grave,6.894147,52.768349,TRUE
+375,Graf 3,121,LFG,Bowl,0,Angelslo,Drenthe,flat grave cemetery,6.918273,52.783254,TRUE
+376,Vlakgraf 4,121,LFG,Amphora-like,0,Angelslo,Drenthe,flat grave cemetery,6.918273,52.783254,TRUE

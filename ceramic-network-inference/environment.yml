@@ -1,0 +1,18 @@
+# conda env create -f environment.yml && conda activate ceramic-network-inference
+# graph-tool is only distributed through conda-forge (Linux and macOS; on Windows use WSL).
+name: ceramic-network-inference
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy=1.26          # tested version; numpy 2 untested
+  - scipy>=1.10
+  - pandas>=2.0
+  - matplotlib>=3.7
+  - scikit-learn>=1.3
+  - graph-tool=2.98     # vendored sbmtm uses the graph-tool 2.x API
+  - gensim              # optional: cross-check of LDA (notebook Section 4.5)
+  - jupyterlab
+  - ipykernel
+  - nbconvert
+  - pytest
