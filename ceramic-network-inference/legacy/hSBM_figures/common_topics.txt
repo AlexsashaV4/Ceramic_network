@@ -1,0 +1,23 @@
+
+ Cluster 15: {'LFG': 20}
+SBM Topics common to all 4 cultures: {1, 2, 5}
+
+SBM Topics unique to each culture:
+  MI: {0, 6, 7}
+  CW: {0, 3}
+  EFG: {0, 4, 6}
+  LFG: {8}
+
+Pairwise common SBM Topics between cultures:
+  MI & CW: {0}
+  MI & EFG: {0, 6}
+  MI & LFG: set()
+  CW & EFG: {0}
+  CW & LFG: set()
+  EFG & LFG: set()
+Words in common SBM Topics between MI and CW: {'(Coiling, Pressure, Scraping)', '(Leather-hard, Burnishing, Shining)', '(Pressure, Wet smoothing, Simple impression)', '(Burnishing, Shining, Dry)', '(Pressure, Wet smoothing, Simple incision)'}
+Words in common SBM Topics between MI and EFG: {'(Coiling, Pressure, Scraping)', '(Pressure, Wet smoothing, Excisions)', '(Pressure, Application separate element, Scraping)', '(Dry, Open firing, Smudging)', '(Leather-hard, Burnishing, Shining)', '(Open firing, Smudging, Incrustation)', '(Application separate element, Scraping, Wet smoothing)', '(Pressure, Wet smoothing, Simple impression)', '(Burnishing, Shining, Dry)', '(Pressure, Wet smoothing, Simple incision)'}
+Words in common SBM Topics between MI and LFG: set()
+Words in common SBM Topics between CW and EFG: {'(Coiling, Pressure, Scraping)', '(Leather-hard, Burnishing, Shining)', '(Pressure, Wet smoothing, Simple impression)', '(Burnishing, Shining, Dry)', '(Pressure, Wet smoothing, Simple incision)'}
+Words in common SBM Topics between CW and LFG: set()
+Words in common SBM Topics between EFG and LFG: set()

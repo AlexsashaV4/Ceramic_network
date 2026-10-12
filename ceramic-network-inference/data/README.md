@@ -30,6 +30,10 @@ All data come from the appendices of
 | `Appendix_F_Simulation/` | simulated chains of sister groups and outgroups: FBN, Odisha, Vlaardingen, random (CSV), and their description (PDF) |
 | `Code/` | Kroon's Pathfinder code (`pathfinder.py`, `module_*.py`, `README.txt`) and its inputs and outputs in `ceramics/` (paths per BoK, link lists of the simulated groups) |
 
+## `source/intcal20/` — the radiocarbon calibration curve
+
+`intcal20.14c`: the IntCal20 Northern Hemisphere calibration curve (Reimer et al. 2020, *Radiocarbon* 62: 725–757, doi:10.1017/RDC.2020.41), downloaded from <https://intcal.org/curves/intcal20.14c> (SHA-256 `974a66649f2ac8a53e6c99e256b019ac6982f999b12dcf7193162d4c1c09168e`). Used by `chaine.chronology` to calibrate Kroon's dates (notebook 10.8), as Kroon did with OxCal.
+
 ## `clean/` — derived by `python scripts/prepare_data.py`
 
 | file | columns |
@@ -61,7 +65,7 @@ Columns: `source`, `g`, `seed`, `pseudo_document`, `bok`, `vessels` (the $g$ ves
 | MI | Funnel Beaker West, middle phase | 95 | 14 |
 | LFG | Funnel Beaker West, late phase | 30 | 7 |
 
-`FBW.csv` of the earlier notebooks is exactly EFG + MI + LFG. Note that MI vessels come almost entirely from megalithic tombs and EFG/LFG mostly from flat-grave cemeteries, so phase and burial context are confounded.
+`FBW.csv` of the earlier notebooks is exactly EFG + MI + LFG. Note that MI vessels come almost entirely from megalithic tombs and EFG/LFG mostly from flat-grave cemeteries, so phase and burial context are confounded. Kroon's Appendix A (Bayesian model 4) defines EFG and LFG as *early* and *late flat graves*: graves with charred wooden structures and a broad spectrum of vessels, and cremation burials with large, complex bowls. His dates place them before CW and beside CW respectively (notebook 10.8).
 
 ## Known quirks (reported by `prepare_data.py`)
 

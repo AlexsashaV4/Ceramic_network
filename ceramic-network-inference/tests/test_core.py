@@ -126,6 +126,28 @@ def test_hsbm_fold_in_matches_full_description_length():
         assert np.allclose(fast, exact, atol=1e-6)
 
 
+def test_btm_recovers_disjoint_topics():
+    """Two vocabularies never used together: BTM puts each in its own topic, and the outputs are distributions."""
+    from chaine.btm import BTM
+    docs = [["a", "b", "c", "a"], ["b", "c", "a"]] * 15 + [["x", "y", "z"], ["y", "z", "x", "y"]] * 15
+    m = BTM(2, n_iter=100, seed=0).fit(docs)
+    assert np.allclose(m.phi.sum(1), 1) and np.isclose(m.theta.sum(), 1)
+    theta = m.transform(docs + [["a"], ["unknown"]])
+    assert np.allclose(theta.sum(1), 1)
+    assert theta[0].argmax() != theta[-3].argmax() and theta[0].max() > 0.9 and theta[-3].max() > 0.9
+
+
+def test_radiocarbon_calibration():
+    """Every date of Appendix A is in one of Kroon's groups; a known date calibrates as in Kroon's OxCal output."""
+    from chaine import chronology as chron
+    dates = chron.load_dates()
+    assert len(dates) == 62 and dates["kroon_group"].notna().all()
+    years = np.arange(2000, 4501)
+    p = chron.calibrate(4550, 60, years)                       # GrN-16040: 3500-3029 cal BCE in Kroon's text
+    lo, hi = chron.interval(years, p)
+    assert np.isclose(p.sum(), 1) and abs(lo - 3500) < 30 and abs(hi - 3029) < 30
+
+
 def test_bayes_ceiling():
     assert abs(data.bayes_ceiling(DF, "bok") - 0.732) < 1e-3
     assert abs(data.bayes_ceiling(DF, "culture") - 0.888) < 1e-3

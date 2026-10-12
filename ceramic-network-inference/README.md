@@ -22,15 +22,20 @@ Kroon (2024) compares BoKs through the edge weights $p(x_{t+1}\mid x_t)$ of a ne
 | LDA on triplets (`LDA_manual`, collapsed Gibbs; gensim cross-check) | legacy topic-model pipeline |
 | Hierarchical SBM (`sbmtm` + graph-tool: several starts, merge-split refinement, posterior sampling, fold-in of new vessels by description length) | legacy network topic model, completed |
 | Markov chains of order 0–3 with hierarchical Dirichlet smoothing and Kroon's grammar | sequence likelihoods, attribution, exact top-k completion of gaps |
+| Biterm topic model (`chaine.btm`) and co-occurrence matrices | topics from co-occurrence in short documents, without pseudo-documents |
+| Radiocarbon calibration with IntCal20 (`chaine.chronology`) | Kroon's dates per group: when the BoKs co-existed, and whether techniques moved between them |
 | Maximum Caliber | maximum-entropy distributions over chains; links the Markov models to a physical principle |
 
 ## Key results
 
-- **Replication.** The legacy topic-model notebook is reproduced step by step with its own functions. Scored in-sample as there, the hSBM classifies 0.59–0.64 of the vessels correctly (legacy: 0.65), and at level 1 its pseudo-document groups coincide with the four BoKs (NMI 0.92).
-- **Much of that separation comes from the bootstrap.** Pseudo-documents built from randomly permuted labels still yield clusters that "recover" them (hSBM NMI ≈ 0.3 at the legacy setting, ≈ 0.6 at 15 vessels per document). On single vessels the hSBM groups are only weakly related to BoK (NMI ≈ 0.15), and MDL rejects the overlapping SBM.
-- **Honest accuracy is modest.** With whole sites held out, every technique-based model (LDA, both hSBM classifiers, naive Bayes, Markov) reaches 0.50–0.54 for four BoKs, against 0.34 for the majority class and a ceiling of 0.73 imposed by identical chains in different BoKs. CW vs FBW: ≈ 0.80–0.83.
+- **Replication.** The legacy topic-model notebook is reproduced step by step with its own functions. Scored in-sample as there, the hSBM classifies 0.61–0.62 of the vessels correctly (legacy: 0.64), and its five pseudo-document groups largely coincide with the four BoKs (NMI 0.78). The legacy 64 % is an in-sample score: with whole sites held out the same classifier reaches 0.53.
+- **Much of that separation comes from the bootstrap.** Pseudo-documents built from randomly permuted labels still yield clusters that "recover" them (hSBM NMI ≈ 0.35 at the legacy setting, ≈ 0.75 at 15 vessels per document). On single vessels the hSBM groups are only weakly related to BoK (NMI ≈ 0.15), and MDL rejects the overlapping SBM.
+- **Honest accuracy is modest.** With whole sites held out, every technique-based model (LDA, both hSBM classifiers, naive Bayes, Markov) reaches 0.50–0.54 for four BoKs, against 0.34 for the majority class and a ceiling of 0.73 imposed by identical chains in different BoKs. CW vs FBW: ≈ 0.80–0.82.
 - **Vessel form is a strong confounder.** Form alone gives 0.56 (four BoKs) and 0.80 (CW vs FBW); the chain adds information beyond form, mainly for the FBW phases.
-- **LDA vs hSBM.** The hSBM infers 26 topics and reproduces the cultures' triplet distributions far more closely than LDA's four (JS 0.006 vs 0.042 bits); for attribution the two are equivalent, and LDA's probabilities are the best calibrated.
+- **LDA vs hSBM.** The hSBM infers 24 topics and reproduces the cultures' triplet distributions more closely than LDA's four (JS 0.006 vs 0.022 bits); for attribution the two are equivalent, and LDA's probabilities are better calibrated.
+- **Better use of the same chains.** Adding the transition probabilities to LDA lifts it from 0.50 to 0.56; learning a weight per transition (maximum entropy) gives the best-calibrated probabilities. Neither beats vessel form alone in accuracy.
+- **Co-occurrence.** The culture is in *which* techniques a vessel uses: learned weights on that set (0.54) match order-aware models, and co-occurring pairs add nothing. The biterm topic model needs no pseudo-documents, but its unsupervised topics barely follow the BoKs.
+- **Time and transfer.** Kroon's radiocarbon dates, calibrated with IntCal20, place the late flat graves (LFG) beside CW for about 250 years. In that time they moved *away* from CW: no CW technique or bag of techniques was adopted.
 - **Sequences and reconstruction.** Pairs of steps (Kroon's edge weights) carry almost all sequential information; one hidden step is recovered exactly for 67–75 % of held-out vessels (top-3 ≈ 95 %). Kroon's Wasserstein comparison is invariant to relabelling edges; edge-aware distances agree that CW is farthest from late FBW.
 
 <p align="center">
@@ -43,8 +48,9 @@ Kroon (2024) compares BoKs through the edge weights $p(x_{t+1}\mid x_t)$ of a ne
 ```
 ├── notebooks/ceramic_network_inference.ipynb   main narrative, executed
 ├── src/chaine/            topic_model (legacy LDA pipeline), sbm (+ vendored sbmtm), classifiers,
-│                          evaluation, data, markov, distances, reconstruction, maxcal, plotting
-├── data/source/           verbatim files from Kroon's DANS deposit (CC-BY-4.0)
+│                          evaluation, data, markov, distances, reconstruction, maxcal, btm,
+│                          chronology, plotting
+├── data/source/           verbatim files from Kroon's DANS deposit (CC-BY-4.0); IntCal20 curve
 ├── data/clean/            tidy CSVs built by scripts/prepare_data.py
 ├── scripts/prepare_data.py
 ├── figures/               figures saved by the notebook
